@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap"
+  rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets\style.css">
+  <title>Online Pandit</title>
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid">
+      <div class="row login">
+        <div class="col-7 px-2 d-none d-lg-block">
+          <div class="login-container">
+            <img src="assets\images\sign_up.png" alt="" class="login_img border-radius1">
+            <div class="login_pcon blur pt-5">
+              <p class="f_size-2 font-prime text-light font-200 pe-5 ps-5 mt-5 pt-5 w-75">Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Vel quisquam sint doloribus ut ratione, quaerat et earum ad quod molestiae
+                officia labore accusantium quos, </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-5 px-lg-1 px-xxl-4 login-form-container">
+          <div class="login-form">
+            <form action="" class="px-1 px-xl-2 px-xxl-5" id="pandit_info" method="Post">
+              <h3 class="f_size-3 font-600 text-center text-lg-start mt-2 mt-md-3 mt-lg-4">"Tell us a bit about
+                yourself!</h3>
+              <p class="f_size-1 font-prime text-capitalize text-center text-lg-start">We're thrilled that you're
+                interested in joining our community. To get started, we'd love to learn more about you. Please take a
+                moment to provide some information.</p>
+              <form action="">
+                <ul class="nav mynav" id="pills-tab" role="tablist">
+                  <div class="rangediv">
+                    <input type="range" class="rangeid range-color1">
+                  </div>
+                  <li class="nav-item" role="presentation">
+                    <button class="my-links active" id="pills-home-tab"  type="button" role="tab" aria-controls="pills-home" aria-selected="true"></button>
+                    <i class="bi bi-check2 d-none ch1"></i>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="my-links" id="pills-profile-tab"  type="button" role="tab" aria-controls="pills-profile" aria-selected="false"></button>
+                    <i class="bi bi-check2 d-none ch2"></i>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="my-links" id="pills-contact-tab" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"></button>
+                    <i class="bi bi-check2 d-none ch3"></i>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form_group">
+                          <label for="exampleInputphone"
+                            class="label bg-prim rounded-2 px-1 f_size-1 text-color1 ">Location</label>
+                          <select name="" id="" class="rounded-2 ps-2 input">
+                            <option class="f_size-2 font-500" value="Mumbai" selected>Mumbai</option>
+                            <option class="f_size-2 font-500" value="Puna">Puna</option>
+                            <option class="f_size-2 font-500" value="others">other</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form_group">
+                        <label for="exampleInputphone"
+                          class="label bg-prim rounded-2 px-1 f_size-1 text-color1 ">Address</label>
+                        <textarea name="address" id="addreess" class="w-100 rounded-2"></textarea>
+                        <span id="addressError" class="text-danger f_size-1 font-600 lh-1 error"></span>
+                      </div>
+                      <div class="form_group">
+                        <label for="locationforpujaInput" class="label bg-prim px-1 f_size-1 text-color1">Location will
+                          cover for puja</label>
+                        <input type="text" class="input" name="cover_Location" id="cover_Location" aria-describedby="emailHelp"
+                          name="password">
+                          <span id="cover_LocationError" class="text-danger f_size-1 font-600 lh-1 error"></span>
+                      </div>
+                      <div class=" form_group">
+                        <p class="text-lg-start f_size-2 mt-3 lh-1 mb-1 font-500">Did you learn this expertise from any
+                          institution </p>
+                        <p class="text-lg-start f_size-1 lh-1">Eg : mahrashi,banaras, Ghode Guruji or from any renowned
+                          guruji</p>
+                        <div class="d-flex">
+                          <div class="option m-1">
+                            <input type="radio" name="education" class="option-1" id="Yes" 
+                              value="Yes" >
+                            <label for="Yes" class="d-flex justify-content-center align-items-center text-capitalize label_option-1 rounded-pill">Yes</label>
+                          </div>
+                          <div class="option m-1">
+                            <input type="radio" name="education" class="option-2" id="no" 
+                              value="No" checked>
+                            <label for="no" class="d-flex justify-content-center align-items-center text-capitalize label_option-1 rounded-pill">No</label>
+                          </div>
+                        </div>
+                        <span class="span text-warning f_size-2 ps-2 pe-5 py-1 mb-1  rounded mt-2 mb-xl-1 mb-xxl-3 d-inline-block" style="background-color:#FEFCE8;"><img src="assets\images\warning-2.png" alt="">&nbsp;&nbsp;Chance increase to get business by sating Yes</span>
+                        <div class=" form_group mt-5">
+                          <a href="" class="input d-flex align-items-center justify-content-center text-light text-decoration-none f_size-2 font-200 w-100 bg-sec" id="continue" >Continue &nbsp; <img src="assets\images\arrow-right.svg" class="mt-1" alt="" width="23px" srcset=""></a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <p class="f_size-2 font-600 mt-1 ms-1 w-50 w-sm-25">Please share your expertise in which all Puja</p>
+                <div class="">
+   
+                  <ul class="pooja-container w-100 ps-0 d-flex  justify-content-around flex-wrap">
+                <li class="pooja-card">
+                  <label for="checkbox-1">
+                    <span><img src="assets\images\ganesh_Puja.png" alt=""></span>
+                    <input type="checkbox" name="ganesh_pooja" id="checkbox-1" class="Pujacheck"> 
+                      <img src="assets\images\checkimg.png" alt="" srcset="">              
+                      <p class="f_size-1 ps-2 font-bolder text-capitalize">Ganesh pooja</p>             
+                  </label>
+                </li>
+                <li class="pooja-card">
+                  <label for="checkbox-2">
+                    <span><img src="assets\images\marragepng.png" alt=""></span>
+                    <input type="checkbox" name="marrage"  id="checkbox-2"  class="Pujacheck"> 
+                      <img src="assets\images\checkimg.png" alt="" srcset=""> 
+                      <p class="f_size-1 ps-2 font-bolder text-capitalize">Marriage</p>             
+                    </label>
+                    
+                  </li>
+                  <li class="pooja-card">
+                    <label for="checkbox-3">
+                      <span><img src="assets\images\satyanarayan_puja.png" alt=""></span>
+                      <input type="checkbox" name="marrage"  id="checkbox-3"  class="Pujacheck"> 
+                      <img src="assets\images\checkimg.png" alt="" srcset="">              
+                      <p class="f_size-1 ps-2 font-bolder text-capitalize">satyanarayan</p>             
+                  </label>
+                </li>
+                <li class="pooja-card">
+                  <label for="checkbox-4">
+                    <span><img src="assets\images\ganesh_Puja.png" alt=""></span>
+                    <input type="checkbox" name="ganesh_pooja" id="checkbox-4"  class="Pujacheck"> 
+                      <img src="assets\images\checkimg.png" alt="" srcset="">  
+                      <p class="f_size-1 ps-2 font-bolder text-capitalize">Ganesh pooja</p>                         
+                  </label>
+                </li>
+                <li class="pooja-card">
+                  <label for="checkbox-5">
+                    <span><img src="assets\images\marragepng.png" alt=""></span>
+                    <input type="checkbox" name="marrage"  id="checkbox-5"  class="Pujacheck"> 
+                      <img src="assets\images\checkimg.png" alt="" srcset="">  
+                      <p class="f_size-1 ps-2 font-bolder text-capitalize">Marriage</p>              
+                  </label>
+                </li>
+                <li class="pooja-card">
+                  <label for="checkbox-6">
+                    <span><img src="assets\images\satyanarayan_puja.png" alt=""></span>
+                    <input type="checkbox" name="marrage"  id="checkbox-6"  class="Pujacheck"> 
+                      <img src="assets\images\checkimg.png" alt="" srcset=""> 
+                      <p class="f_size-1 ps-2 font-bolder text-capitalize">satyanarayan</p>             
+                  </label>
+                </li>
+                <li class="pooja-card">
+                  <label for="checkbox-7">
+                    <span><img src="assets\images\ganesh_Puja.png" alt=""></span>
+                    <input type="checkbox" name="ganesh_pooja" id="checkbox-7"  class="Pujacheck"> 
+                      <img src="assets\images\checkimg.png" alt="" srcset="">  
+                      <p class="f_size-1 ps-2 font-bolder text-capitalize">Ganesh pooja</p>                         
+                  </label>
+                </li>
+                <li class="pooja-card">
+                  <label for="checkbox-9">
+                    <span><img src="assets\images\marragepng.png" alt=""></span>
+                    <input type="checkbox" name="marrage"  id="checkbox-9"  class="Pujacheck"> 
+                      <img src="assets\images\checkimg.png" alt="" srcset=""> 
+                      <p class="f_size-1 ps-2 font-bolder text-capitalize">Marriage</p>               
+                  </label>
+                </li>
+                <li class="pooja-card">
+                  <label for="checkbox-8">
+                    <span><img src="assets\images\satyanarayan_puja.png" alt=""></span>
+                    <input type="checkbox" name="marrage"  id="checkbox-8"  class="Pujacheck"> 
+                      <img src="assets\images\checkimg.png" alt="" srcset=""> 
+                      <p class="f_size-1 ps-2 font-bolder text-capitalize">satyanarayan</p>             
+                  </label>
+                </li>
+                <div class="whiteblur"></div>
+              </ul>  
+              <span id="pujaError" class="text-danger f_size-1 font-600 lh-1 error"></span>
+                </div>
+                <div class=" form_group mt-0">
+                  <a href="" class="input d-flex align-items-center justify-content-center text-light text-decoration-none f_size-2 font-200 w-100 bg-sec" id="continue1">Continue &nbsp; <img src="assets\images\arrow-right.svg" class="mt-1" alt="" width="23px" srcset=""></a>
+                </div>
+
+                </div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                    <div class="form_group col-12">
+                      <label for="" class="label bg-prim px-1 f_size-1 text-color1">Share other pujas and havan u r interested to get yajman enuiry</label>
+                      <label class="more_option_pandit borderd-1 rounded-2 d-flex w-100" for="extrapuja">
+                       <div id="wordContainer"></div><input type="text" id="extrapuja" name="extra_puja">
+                      </label>
+                      <span id="intrustingpujaError" class="text-danger f_size-1 font-600 lh-1 error"></span>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form_group">
+                          <label for="reference" class="label bg-prim px-1 f_size-1 text-color1">reference</label>
+                          <input type="text" class="input"  id="referenceid" name="referenceid" placeholder="ReferenceID">
+                          <span id="referenceError" class="text-danger f_size-1 font-600 lh-1 error"></span>
+                          
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form_group">
+                          <label for="total_no_puja" class="label bg-prim px-1 f_size-1 text-color1">total puja performed by far</label>  
+                          <input type="text" class="input" id="total_no_puja"  name="total_no_puja">
+                          <span id="total_no_pujaError" class="text-danger f_size-1 font-600 lh-1 error"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_group col-12">
+                      <label for="" class="label bg-prim px-1 f_size-1 text-color1">Language preference</label>
+                      <select class="js-example-basic-multiple form-control select" name="states[]" multiple="multiple">
+                        <option value="marathi" class="Language_preference">Marathi</option>
+                        <option value="Hindi" class="Language_preference">Hindi</option>
+                        <option value="Tamil" class="Language_preference">Tamil</option>    
+                       
+                      </select>
+                      <span id="Language_preferenceError" class="text-danger f_size-1 font-600 lh-1 error"></span>
+                    </div>
+                    <div class="form_group col-12 mt-2">
+                      <div class="row">
+                        <label for="" class="col-5 d-flex align-items-center font-bold">Passport Available</label>
+                        <div class="col-7 d-flex justify-content-end">
+                          <div class="option m-1">
+                            <input type="radio" name="passport" class="option-3" id="pass_yes" 
+                              value="Yes">
+                            <label for="pass_yes" class="d-flex justify-content-center align-items-center text-capitalize label_option-1 rounded-pill">Yes</label>
+                          </div>
+                          <div class="option m-1">
+                            <input type="radio" name="passport" class="option-4" id="pass_no" 
+                              value="No" checked>
+                            <label for="pass_no" class="d-flex justify-content-center align-items-center text-capitalize label_option-1 rounded-pill">No</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form_group col-12">
+                      <label for="" class="label bg-prim px-1 f_size-1 text-color1">Prefered countries to travel for Puja</label>
+                      <select class="js-example-basic-multiple form-control select" disabled id="seleiectFld" name="states[]" multiple="multiple">
+                        <option value="marathi" selected class="w-100">Japan</option>
+                        <option value="UK">UK</option>
+                        <option value="USA">USA</option>  
+                      </select>
+                    </div>
+                    <div class="form_group col-12 mt-3">
+                      <div class="font-bold f_size-2">Available for ganesh sthapna pran pratishta</div>
+                    <div class="d-flex">
+                      <div class="option m-1">
+                        <input type="radio" name="available" class="option-3" id="available_yes" 
+                          value="Yes" checked >
+                        <label for="available_yes" class="d-flex justify-content-center align-items-center text-capitalize label_option-1 rounded-pill">Yes</label>
+                      </div>
+                      <div class="option m-1">
+                        <input type="radio" name="available" class="option-4" id="available_no" 
+                          value="No">
+                        <label for="available_no" class="d-flex justify-content-center align-items-center text-capitalize label_option-1 rounded-pill">No</label>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="form_group">
+                      <div class="row">
+                        <label for="" class="col-8 mt-3"> How many days ago we shud inform you for a puja</label>
+                       <div class="col-lg-4 col-xxl-3">
+                        <label for="" class="label bg-prim px-1 f_size-1 text-color1" id="days">Day</label>
+                        <select name="" id="" class="rounded-1">
+                          <option value="" class="days">1 day</option>
+                          <option value="" class="days">2 days</option>
+                          <option value="" class="days">3 days</option>
+                         </select>
+                         <span id="DaysError" class="text-danger f_size-1 font-600 lh-1 error"></span>
+                       </div>
+                      </div>                    
+                    </div>
+                    <div class="form_group mt-5">
+                     <input type="submit" value="Submit" id="pandit_info_btn" class="input d-flex align-items-center justify-content-center text-light text-decoration-none f_size-1 font-bold w-100 bg-sec">
+                    </div>
+                  </div>
+                </div> 
+          </form>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="assets\script.js"></script>
+  <script>
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* ******** theme start************* */
+.color {
+    background: #C03;
+}
+
+.text-color1 {
+    color: rgb(120, 120, 120);
+}
+
+.bg-prim {
+    background-color: #fff;
+}
+
+.bg-sec {
+    background-color: #C03;
+}
+
+.border-radius1 {
+    border-radius: 16px;
+}
+
+.font-prime {
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: normal;
+}
+
+.f_size-1 {
+    font-size: calc(9px + (12 - 9)*(100vw - 320px) / (1920 - 320));
+}
+
+.f_size-2 {
+    font-size: calc(11px + (14 - 11)*(100vw - 320px) / (1920 - 320));
+}
+
+.f_size-3 {
+    font-size: calc(20px + (30 - 20)*(100vw - 320px) / (1920 - 320));
+}
+
+.font-200 {
+    font-weight: 200;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.blur {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30vh;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(0, 0, 0, 0.00) 0.01%, #000 100%);
+}
+.error{position: relative;top:-5px; left: 5px;}
+/* ******** theme end************* */
+/* ******** login form start ************************* */
+.login-container {
+    width: 100%;
+    height: 99vh;
+    position: relative;
+}
+
+.login .login_img {
+    width: 100%;
+    height: 99vh;
+    object-fit: cover;
+}
+
+.login form .label {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: rgb(120, 120, 120);
+    z-index: 10;
+    text-transform: capitalize;
+}
+
+.login form .input {
+    height: calc(39px + (70 - 39)*(100vh - 320px) / (1920 - 320));
+    font-size: 15px;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid rgb(200, 200, 200);
+    outline: none;
+    padding-left: 10px;
+}
+
+.welcome_img {
+    width: calc(90px + (150 - 90)*(100vw - 320px) / (1920 - 320));
+    object-fit: contain;
+}
+
+.welcom_log {
+    width: calc(200px + (140 - 90)*(100vw - 320px) / (1920 - 320))
+}
+
+.login .hr_con span {
+    position: relative;
+    top: -30px;
+    left: 45%;
+} 
+
+.media_icon {
+    border: 1px solid rgb(200, 200, 200);
+    width: calc(160px + (240 - 160)*(100vw - 320px) / (1920 - 320));
+    height: calc(50px + (80 - 50) * (100vh - 320px) / (1920 - 320));
+}
+.media_icon_img {
+    height: calc(25px + (60 - 25)*(100vh - 320px) / (1920 - 320));
+    width: calc(25px + (60 - 25)*(100vw - 320px) / (1920 - 320));
+    object-fit: contain;
+}
+
+/* ******** login form end ************************* */
+/* ***********signup page start ********************/
+.signup_media_con ul li {
+    list-style: none;
+}
+
+.signup_media_con ul li a {
+    height: calc((50px + (85 - 50)*(100vh - 320px) / (1920 - 320)));
+    width: calc(75px + (180 - 75)*(100vw - 320px) / (1920 - 320));
+    background-color: #F4F4F5;
+    border-radius: 10px;
+}
+
+/* ***************signup page  end *************/
+
+/* *************** pandit info start ******************** */
+/* .input-group .input-group-text{border-right: none; background-color: #fff;} */
+.form_group select {
+    width: 100%;
+    height: calc(39px + (60 - 39)*(100vh - 320px) / (1920 - 320));
+    border: 1px solid #9f9f9f;
+    outline: none;
+}
+
+.form_group textarea {
+    height: calc(100px + (150 - 100)*(100vh - 320px) / (1920 - 320));
+    outline: none;
+    border: 1px solid #9f9f9f;
+    padding-left: 10px;
+}
+
+
+.label_option-1 {
+    width: 90px;
+    height: 35px;
+    transition: all 0.5s ease;
+    background: #E4E4E7;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #C03;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.form_group .js-example-basic-multiple {
+    display: block;
+}
+
+/* *************** nav tabs start****************** */
+
+/* *************** nav tabs end****************** */
+/* ************** pooja container start**************** */
+.pooja-container {
+    height: 410px;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    position: relative;
+}
+
+.whiteblur {
+    position: fixed;
+    bottom: 181px;
+    width: 500px;
+    height: 50px;
+    background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%, #FFF 100%);
+}
+
+.pooja-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.pooja-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.pooja-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.pooja-container .pooja-card {
+    position: relative;
+    width: 159px;
+    height: 181px;
+    list-style: none;
+    border-radius: 10px;
+}
+
+.pooja-container .pooja-card span img {
+    width: 159px;
+    height: 161px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+img {
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 20px;
+    z-index: 999;
+}
+
+input[type="checkbox"]:checked+img {
+    display: block;
+}
+
+input[type="checkbox"]:checked~p {
+    color: #C03;
+}
+
+.select {
+    width: 500px;
+}
+
+/* ************** pooja container end**************** */
+.mynav {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    position: relative;
+}
+
+.nav-item {
+    display: inline-block !important;
+    height: 20px !important;
+    width: 20px !important;
+    position: relative;
+}
+
+.nav-item i {
+    background-color: #C03;
+    color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    width: 23px;
+    text-align: center;
+    height: 10px;
+    padding-bottom: 22px;
+    font-size: 14px;
+    left: 0px;
+}
+
+.mynav .my-links {
+    background-color: rgb(171, 171, 171);
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    border-radius: 50%;
+    border: 3px solid rgb(215, 215, 215);
+}
+
+.mynav .my-links.active {
+    background-color: rgb(252, 252, 252);
+    border: 3px solid #C03;
+}
+
+.mynav .rangediv input[type="range"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    height: 5px;
+}
+
+.rangediv {
+    position: absolute;
+    z-index: -99;
+    top: -5px;
+    /* display:inline-block; */
+    width: 100%;
+    /* background-color: green; */
+    height: 5px;
+    box-sizing: border-box;
+}
+
+.mynav .rangediv input[type="range"]::-webkit-slider-thumb {
+    background-color: #C03;
+    -webkit-appearance: none;
+    background-color: #C03;
+}
+
+/* *************** pandit info end ******************** */
+.range-color1 {
+    background: linear-gradient(90deg, #E4E4E7 50%, #E4E4E7 50%);
+    width: 100%;
+}
+
+.range-color2 {
+    background: linear-gradient(90deg, #FEE2E2 50%, #E4E4E7 50%);
+    width: 100%;
+}
+
+.range-color3 {
+    background: linear-gradient(90deg, #FEE2E2 50%, #FEE2E2 50%);
+    width:100%;
+}
+/* option for pandit start */
+.more_option_pandit{height:47px;border: 1px solid rgb(200, 200, 200);}
+.more_option_pandit input{border: none; outline: none; width:100px; padding-left:5px ; }
+.red-box {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #FEE2E2!important;;
+    color:#C03;
+    border-radius: 5px;
+    /* overflow:scroll; */
+    height: 35px;
+  }
+  #wordContainer{height: 70px; overflow:hidden;}
+  .remove-cross {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 10px;
+    padding:0px 10px 15px 5px;
+    border: 1px solid #C03;
+    height:15px;
+    width: 15px;
+    border-radius: 50%;
+    font-weight: bolder;
+  }
+/* option for pandit end */
+/* select 2 */
+
+
+.select2-container--default .select2-selection--multiple{height:50px!important;}
+.select2.select2-container.select2-container--default {
+    width: 100% !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    background-color: #FEE2E2!important;
+    color:#C03;
+    border: none;
+    height: 35px!important;
+    font-size: 18px;
+    padding-top: 4px;
+    margin-top: 8px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    margin-top:-3px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    height:0px;
+    font-size: 18px;
+
+}
+
+/* ******** media Query start************************************** */
+/* ******** media Query end************************************** */
+@media (max-width: 960px) {
+    .login-form {
+        width: 450px;
+        padding: 40px;
+        border-radius: 16px;
+        margin: auto;
+        margin-top: 10%;
+        background: #fff;
+    }
+
+    .login-form-container {
+        background-image: url("/assets/images/Login.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 460px) {
+    .w-sm-35 {
+        width: 35%;
+    }
+    .login-form {
+        width: 100%;
+        padding: 12px;
+        margin-top: 0%;
+        border-radius: 10px;
+    }
+
+    .login-form-container {
+        background-image: none;
+    }
+}
