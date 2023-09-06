@@ -500,6 +500,7 @@ input[type="checkbox"]:checked~p {
     }
 /* mobile navbar  end */
 /* puja cards start */
+
  .puja-carousal h3{
     font-weight: 800;
     margin-top: 60px;
@@ -511,6 +512,58 @@ input[type="checkbox"]:checked~p {
     height:449px;
 
 }
+.puja-carousal .puja_cards .puja_card_body{
+    width: 327px;
+     height: 74px;
+     border-top-right-radius:15px ;
+    }
+    .puja-carousal .puja_cards img{width:320px;}
+    .puja-carousal .puja_cards .puja_card_body div span:last-child{
+        font-size: 12px;
+        text-decoration: line-through;
+        color:#9f9f9f;
+    }
+    .custom-owl-controls {
+        position: relative;
+       top:-250px;
+       z-index: 999;
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: space-between;
+   
+      }
+      .custom-owl-next ,
+      .custom-owl-prev{
+        position:absolute;
+        width: 100%;
+        cursor: pointer;
+        width:60px;
+        height:60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        border-radius: 50%;
+        fill: rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(9.5px);
+      }
+      .custom-owl-next{
+        left:-30px;
+      }
+      .custom-owl-prev{right:-30px;}
+    
+      
+      .custom-owl-prev img,
+      .custom-owl-next img {
+        width: 40px; /* Set the width and height as needed */
+        height: 40px;
+     
+     
+      }
+      .owl-nav {
+        display: none;
+      }
+      
 /* puja cards end */
 /* ******* index page end***************************************** */
 /* ******** media Query start************************************** */

@@ -328,5 +328,5 @@ $(document).ready(function() {
   function removeLastWord() {
     $("#wordContainer").children().last().remove().delete();
   }
-  
+ 
   // pandit for extra puja end js 
