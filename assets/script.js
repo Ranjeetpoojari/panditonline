@@ -330,3 +330,98 @@ $(document).ready(function() {
   }
  
   // pandit for extra puja end js 
+  $('.Pujacarousel').owlCarousel({
+    loop: true,
+
+    nav: true,
+    loop: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+
+      1200: {
+        items: 3
+      },
+      1400: {
+        items: 4
+      }
+    }
+  })
+  $('.videocon_iteam').owlCarousel({
+    loop: true,
+    
+    nav: true,
+    loop: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 2
+      },
+    900: {
+        items: 3
+      }
+    }
+  })
+  $('.testimonial_carousel').owlCarousel({
+    loop: true,
+
+    nav: true,
+    loop: true,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1
+      }
+
+    }
+  })
+
+$('.custom-owl-prev').click(function () {
+  // Find the data-carousel-id of the clicked previous button
+  var carouselId = $(this).closest('.custom-owl-controls').data('carousel-id');
+  
+  // Find the carousel associated with the data-carousel-id
+  var carousel = $('.owl-carousel[data-carousel-id="' + carouselId + '"]');
+  
+  // Trigger the 'prev.owl.carousel' event only for that carousel
+  carousel.trigger('prev.owl.carousel');
+});
+
+$('.custom-owl-next').click(function () {
+  // Find the data-carousel-id of the clicked next button
+  var carouselId = $(this).closest('.custom-owl-controls').data('carousel-id');
+  
+  // Find the carousel associated with the data-carousel-id
+  var carousel = $('.owl-carousel[data-carousel-id="' + carouselId + '"]');
+  
+  // Trigger the 'next.owl.carousel' event only for that carousel
+  carousel.trigger('next.owl.carousel');
+});
+
+
+
+// video carousal code
+const video = document.getElementById('selected-video');
+const playButton = document.getElementById('play-button');
+
+playButton.addEventListener('click', () => {
+  if (video.paused) {
+    video.play();
+    playButton.style.display = 'none'; // Hide the play button
+  } 
+});
+video.addEventListener('click', () => {
+    if (video.played) {
+      video.pause();
+      playButton.style.display = 'block'; // Hide the play button
+    } 
+  });
+  $(".owl-carousel").on("click", ".owl-item", function () {
+    var selectedVideoSrc = $(this).find("video").attr("src");
+    $("#selected-video").attr("src", selectedVideoSrc);
+});
