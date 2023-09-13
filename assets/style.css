@@ -43,8 +43,9 @@
 .f_size-3 {
     font-size: calc(14px + (25 - 14)*(100vw - 320px) / (1920 - 320));
 }
+.f_size-12{font-size:12px;}
 .f_size-4{font-size: calc(18.095px + (30 - 18.095)*(100vw - 320px) / (1920 - 320)) ;}
-
+.f_size-15{font-size: 15px;}
 .font-200 {
     font-weight: 200;
 }
@@ -520,7 +521,7 @@ input[type="checkbox"]:checked~p {
      border-top-right-radius:15px ;
     }
 
-    .puja-carousal .puja_cards img{width:320px; margin: auto;}
+    .puja-carousal .puja_cards img{width:300px; margin: auto;}
     .puja-carousal .puja_cards .puja_card_body div span:last-child{
         font-size: 12px;
         text-decoration: line-through;
@@ -747,27 +748,72 @@ position: relative;
 /* ******* index page end***************************************** */
 /* ************** pooja and pandit page state   ************/
 .pandit_puja{
-    width: 250px;
-    height:50px;
+    width: 210px;
+    height:40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: #C03;
+    background-color:#F4F4F5;
    
 }
 .pandit_puja a{
-    color:#E4E4E7;
-    display:inline-block;
+    color:black;
+
     width:100px;
-    height:40px;
-    /* background-color: #FFF84A; */
+    height:30px;
+    background-color:#F4F4F5;
+    border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .pandit_puja a:focus,.pandit_puja a:active{
 background-color: #C03;
 color:#E4E4E7;
 max-width:100% ;
 }
+.panditcard{width: 300px; height:400px; position: relative;}
+.panditcard img{object-fit: cover; border-radius: 10px; width: 300px; height:400px;}
+.panditcardbody {
+    height:70px;
+     width: 300px;
+     background-color: #FFF;
+     position: absolute;
+     bottom: -48px;
+      left:0px; 
+      border-top-right-radius: 20px;
+    }
+    .dropdown-container{
+        width:200px;
+    
+    }
+    .dropdown-container button{
+        width: 200px;
+        border:none;
+        padding: 10px;
+        text-align: start;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    .dropdown-container ul{
+       z-index:900;
+       background: #fff;
+       width: 100%;
+       border-radius: 5px;
+       display:none;
+    }
+    .dropdown-container ul li{
+        padding:7px 5px;
+    }
+    .dropdown-container ul li a:hover {
+        color:#000;
+    }
+    .dropdown-container button:hover, 
+    .dropdown-container button:active,
+    .dropdown-container button:focus  ~ ul{
+        display: block;
+    }
 
 /**************** pooja and pandit page end ****************/
 
