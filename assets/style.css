@@ -39,7 +39,7 @@
 .f_size-2 {
     font-size: calc(11px + (14 - 11)*(100vw - 320px) / (1920 - 320));
 }
-
+.f_size-10{font-size:10px;}
 .f_size-3 {
     font-size: calc(14px + (25 - 14)*(100vw - 320px) / (1920 - 320));
 }
@@ -49,7 +49,7 @@
 .font-200 {
     font-weight: 200;
 }
-
+.bg-warn{background: #fffeb4;}
 .font-300 {
     font-weight: 300;
 }
@@ -75,6 +75,9 @@
     background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(0, 0, 0, 0.00) 0.01%, #000 100%);
 }
 .error{position: relative;top:0px; left: 5px;}
+.linear-gradient{
+    height:50px;
+}
 /* ******** theme end************* */
 /* ******** login form start ************************* */
 .login-container {
@@ -405,8 +408,10 @@ input[type="checkbox"]:checked~p {
     background-attachment: fixed;
     background-size: cover; 
     width: 100%;
+    /* height:150vh; */
     
     flex-shrink: 0;
+    /* background: linear-gradient(45deg,rgb(196, 232, 249),rgb(169, 203, 248),rgb(62, 59, 228)); */
     padding: calc(20px + (50 - 20)*(100vw - 320px) / (1920 - 320));
 }
 .background-img .navbar-container{
@@ -438,7 +443,17 @@ input[type="checkbox"]:checked~p {
 /* navbar  end */
 /* mobile navbar start  */
 .navbar-mobile{height:calc(64px + (100 - 64)*(100vw - 320px) / (1920 - 320));}
-.navbar-mobile li{}
+.offcanvas .offcanvas-body ul li a{
+   
+    height:50px;
+  
+}
+.offcanvas .offcanvas-body ul li:hover a{
+  
+    font-weight: bold;
+    color:#000;
+    border-bottom:2px solid #C03;
+}
 .navbar-mobile a img{
  height:25px;
 }
@@ -448,9 +463,10 @@ input[type="checkbox"]:checked~p {
     text-align: center;
     padding-top: 40px;
     color: #000;
-    background-image: url(/assets/images/h1bacground.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-image: url(/assets/images/h1bacground.png); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+
     height:120px;
     background-size:200px;
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -786,10 +802,14 @@ max-width:100% ;
     }
     .dropdown-container{
         width:200px;
+        border: 1px solid rgb(185, 185, 185);
+        height:48px;
+        border-radius: 5px;
     
     }
     .dropdown-container button{
-        width: 200px;
+        width: 195px;
+  
         border:none;
         padding: 10px;
         text-align: start;
@@ -814,8 +834,32 @@ max-width:100% ;
     .dropdown-container button:focus  ~ ul{
         display: block;
     }
-
+    .sorts{
+        border:1px solid rgb(156, 156, 156);
+        width: 100px;
+    }
+/* ************** allpandit cards start ********** */
+.allpanditcards .allpanditimg{
+    width:320px;
+    padding:4px;
+    height:320px;
+}
+.allpanditcards .allpanditimg ul li img{
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+}
+.allpanditcards .allpanditimg ul{
+    border:1px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    padding:7px 7.2px 0px 7.2px!important;
+}
+.warning-w{width:400px;}
+/* ************** allpandit cards ends ********** */
 /**************** pooja and pandit page end ****************/
+/*************** Checkout Page start*********/
+
+/* ************** Checkout Page end******** */
 
 
 /* ******** media Query start************************************** */
@@ -852,8 +896,8 @@ max-width:100% ;
     .puja-carousal .puja_cards .puja_card_body{
         width: 324;
         left:10px;
+    }
     
-        }
    
 }
 /* ************ about start *********** */
@@ -940,5 +984,6 @@ max-width:100% ;
              
                border-radius: 10px;
            }
+           .warning-w{width:320px;}
     
 }

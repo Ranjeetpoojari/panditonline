@@ -425,3 +425,23 @@ video.addEventListener('click', () => {
     var selectedVideoSrc = $(this).find("video").attr("src");
     $("#selected-video").attr("src", selectedVideoSrc);
 });
+
+
+function showFaqAns(id) {
+  // <!--  -->
+  if ($('#ans_' + id).is(':visible')) {
+
+     $('#ans_' + id).slideUp()
+     $('#icon_' + id).removeClass('bi-dash').addClass('bi-plus')
+  } else {
+     $('.faq-content').hide()
+
+     $('#ans_' + id).slideDown()
+     $('#icon_' + id).removeClass('bi-plus').addClass('bi-dash')
+  }
+}
+
+
+
+
+

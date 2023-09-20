@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Online Pandit</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <!-- Font font-awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,600;10..48,800&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="/assets/style.css">
+   <link rel="stylesheet" href="/assets/script.js">
+
+   <!-- bootstrap icon -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+   <nav>
+      <div class="container-fluid px-0">
+          <nav class="navbar-container bg-prim rounded d-none d-lg-block my-3">
+            <div class="contact-nav d-flex justify-content-between align-items-center  mx-4">
+              <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log d-inline-block">
+              <ul class="d-flex  align-items-center mb-0">
+                <li><img src="assets\images\location.svg" alt="">
+                  <select name="" id="" class="border border-0 f_size-2 font-prime text-capitalize">
+                    <option value="" selected>Mumbai&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option value="">Puna&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                  </select>
+                </li>
+                <li class="align-self-center">
+                  <a href="" class="bg-sec rounded-pill text-light text-capitalize text-decoration-none d-inline-block">
+                    <img src="assets\images\call-calling.svg" alt="" class="">&nbsp;customer support</a>
+                </li>
+                <li>
+                  <img src="assets\images\shopping-cart.svg" alt="" srcset="">
+                </li>
+                <li>
+                  <img src="assets\images\profile.svg" alt="" srcset="">
+                </li>
+                <li>
+                  <img src="assets\images\search-normal.svg" alt="" srcset="">
+                </li>
+              </ul>
+            </div>
+            <div class="container-link">
+              <ul class="f_size-2 font-prime text-uppercase d-flex justify-content-between ">
+  
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">Home</a></li>
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">All Pooja</a>
+                </li>
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">Astrology
+                    consultion</a></li>
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-warning">*Upgrade to
+                    premium</a></li>
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">articles</a>
+                </li>
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">media</a></li>
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">blog</a></li>
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">about us </a>
+                </li>
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">contact us</a>
+                </li>
+  
+              </ul>
+            </div>
+          </nav>
+  
+          <nav class="navbar-mobile bg-prim rounded d-block d-lg-none">
+            <ul class="d-flex align-items-center justify-content-between mb-0 ps-0 h-100">
+              <li class="d-flex ">
+                <a class="btn bg-prim d-flex h-100 d-flex align-items-center" data-bs-toggle="offcanvas"
+                  href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <img src="assets\images\menu.svg" alt="" srcset="">
+                </a>
+                <a class="btn bg-prim d-flex h-100 d-flex align-items-center">
+                  <img src="assets\images\search-normal.svg" alt="" srcset="">
+                </a>
+              </li>
+  
+              <li>
+                <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log d-inline-block">
+              </li>
+  
+              <li class="d-flex">
+                <a class="btn bg-prim d-flex h-100 d-flex align-items-center" data-bs-toggle="offcanvas"
+                  href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <img src="assets\images\profile.svg" alt="" srcset="">
+                </a>
+                <a class="btn bg-prim d-flex h-100 d-flex align-items-center">
+                  <img src="assets\images\shopping-cart.svg" alt="" srcset="">
+                </a>
+              </li>
+            </ul>
+  
+  
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="assets\images\pandit_log.png" class="w-75" alt="" srcset=""></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="">
+                <ul class="p-0">
+                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">Home</a></li>
+                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">ALL Pooja</a></li>
+                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">Astrogy consultion</a></li>
+                  <li><a href="#" class="text-uppercase font-prime text-decoration-none w-100 d-block pt-3 text-warning">Upgrade to Premium</a></li>
+                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">Articles</a></li>
+                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">Media</a></li>
+                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">blog</a></li>
+                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">About us</a></li>
+                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">contact us</a></li>
+                </ul>
+                </div>
+               
+              </div>
+            </div>
+          </nav>
+        </div>
+    </nav>
+   <main>
+      <div class="container-fluid mt-5">
+         
+         <div class="container">
+            <!------------------------- Top Row -------------------->
+            <div class="row">
+               <!------------------------- Image Section -------------------->
+               <div class="container-fluid">
+                  <div class="row ">
+                     <div class="col-4 mian-img img-fluid col-md-6 col-xl-4 col-sm-12 sticky-md-top float-md-start pt-3">
+                        <img src="/assets/images/ganeshpuja1.png" class="rounded-4 image-fluid mx-auto sm-mx-auto d-block" alt="...">
+                        <div class="row d-none d-md-flex">
+                           <div class="row">
+                              <div class="col-3 mt-3 sub-img mx-auto d-block">
+                                 <img src="/assets/images/ganeshpuja1.png" class="rounded-4 img-fluid" alt="...">
+                              </div>
+                              <div class="col-3 mt-3 sub-img mx-auto d-block">
+                                 <img src="/assets/images/ganeshpuja1.png" class="rounded-4 img-fluid" alt="...">
+                              </div>
+                              <div class="col-3 mt-3 sub-img mx-auto d-block">
+                                 <img src="/assets/images/ganeshpuja1.png" class="rounded-4 img-fluid" alt="...">
+                              </div>
+                              <div class="col-3 mt-3 sub-img mx-auto d-block">
+                                 <img src="/assets/images/ganeshpuja1.png" class="rounded-4 img-fluid" alt="...">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!------------------------- Middle Text Section -------------------->
+                     <div class="col-5 col-sm-5 col-12 md-ps-3 py-2 lg-pe-5 sm-pe-1">
+                        <h5 class="text-main f_size-20 mt-3">Ganesh Pooja</h5>
+                        <p class="para f_size-15">Lord Ganesh is every devotee’s favourite god. Ganesh Pooja is done almost on all
+                           occasions. This Pooja is done to remove all the obstacles and bring happiness in one’s life.
+                        </p>
+                        <h5 class=" text-head f_size-4 py-2">KEY INSIGHTS</h5>
+                        <p class="para f_size-15">Lord Ganesh is worshipped in this Pooja.
+                           Devotees pray for prosperity and wellbeing towards Lord Ganesh.
+                           This Pooja is done before starting any business/exam and other occasions.
+                           Durva and ashta dravya is offered to Lord Ganesh.</p>
+                        <h5 class="text-head">PROMISE</h5>
+                        <p class="para f_size-15">Our pandits are certified by authorized Vedic teaching institute.
+                           Pooja is done as per Vedic procedures.
+                           The Pooja material used is pure and genuine.
+                           We are punctual and supportive during the Pooja time period.</p>
+                        <h5 class="text-head">DESCRIPTION</h5>
+                        <p class="para py-2 f_size-15">Lord Ganesh ji is known to take away all the sorrow and grief from their
+                           devotee’s life. Therefore all the devotees perform the Ganesh Pooja in order to bring
+                           positivity and
+                           wellbeing into their lives. Ganesh Pooja is also performed before any major occasion. Lord
+                           Ganesh
+                           always listens to their devotee’s prayers.</p>
+                        <p class="para f_size-15">
+                           Ganesh Pooja is performed by expert pandit. Idol or portrait of Lord Ganesh is decorated with
+                           flowers and Durva and ashta dravya is also offered in front of it. The Pooja starts with
+                           Ganesh
+                           Mantra and then ends with Ganesh Aarti. After the Pooja all devotees seek blessings from Lord
+                           Ganesh. The Muhurtha for this Pooja is decided by pandit on the basis of tithi, Nakshatra,
+                           and yog.
+                        </p>
+                        <button type="button"
+                           class=" w-100 bg-sec text-white py-3 border-0 px-3 rounded-3 justify-content-between align-items-center d-lg-none d-md-none d-sm-flex sticky-bottom">
+                           <span class="float-start sticky">Book Now</span> <i
+                              class="fa-solid fa-arrow-right-long float-end py"></i>
+                        </button>
+                     </div>
+                     <!------------------------- Card Section -------------------->
+                     <div class="col-xl-3 col-sm-12 col-md-12 py-3 d-flex justify-content-center justify-content-sm-center justify-content-lg-end justify-content-md-end ps-2 mx-auto">
+                        <div class="card ">
+                           <div class="card-body mx-auto">
+                              <h5 class="card-pac">Package</h5>
+                              <s class="card-text">Rs.8600</s>
+                              <p class="card-b-price">Rs. 3600 /-</p>
+                              <button type="button"
+                                 class=" bg-warning rounded-pill text-white py-2 border-0 px-3 rounded-3  mb-2">
+                                 Save Rs.5000 /-</button>
+
+                              <h5 class="card-h1">All inclusive</h5>
+                              <p class="card-text">Puja Will Be Performed Within 24 hr</p>
+                              <h5 class="card-h2">Procedure involved</h5>
+                              <ul class="icons p-0">
+                                 <li><i class="fa-solid fa-check"></i> Ganesh Sthapana</li>
+                                 <li><i class="fa-solid fa-check"></i> Gauri Ganesh Puja</li>
+                                 <li><i class="fa-solid fa-check"></i> Kalash Puja</li>
+                                 <li><i class="fa-solid fa-check"></i> Ganeshji Aarti</li>
+                                 <li><i class="fa-solid fa-check"></i> Prasad Distribution</li>
+                              </ul>
+                              <h5 class="card-h2">Inclusions</h5>
+                              <ul class="icons p-0">
+                                 <li><i class="fa-solid fa-check"></i> Ganesh Sthapana</li>
+                                 <li><i class="fa-solid fa-check"></i> Gauri Ganesh Puja</li>
+                                 <li><i class="fa-solid fa-check"></i> Kalash Puja</li>
+                                 <li><i class="fa-solid fa-check"></i> Ganeshji Aarti</li>
+                                 <li><i class="fa-solid fa-check"></i> Prasad Distribution</li>
+                              </ul>
+                              <button type="button"
+                                 class=" w-100 bg-sec text-white py-2 border-0 px-3 rounded-3 d-flex justify-content-between align-items-center">
+                                 <span class="float-start">Book Now</span> <i
+                                    class="fa-solid fa-arrow-right-long float-end"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!------------------------- Bot Row Section -------------------->
+
+                  <div class="col-lg-8 col-sm-12 mx-auto my-5 sm-auto">
+                     <h3 class="text-center f_size-4 ">Frequently Asked Questions</h3>
+                     <div class="faqContainer d-flex flex-column gap-3 align-items-center">
+
+                        <div class="rounded-3 w-100" style="background: #FAE5EB;">
+                           <div>
+                              <button onclick="showFaqAns(this.id)" id="faq_1"
+                                 class="btn w-100 d-flex justify-content-between align-items-center p-2 px-4 f_size-2 "><span>Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit? </span><span><i id="icon_faq_1" class="bi bi-plus"></i></span></button>
+                           </div>
+                           <div id="ans_faq_1" class="p-2 px-4 border-top faq-content f_size-2" style="display: none;">
+                              <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi eveniet
+                                 cumque ab velit facere temporibus consectetur officiis excepturi repudiandae nulla
+                                 dolor in non mollitia placeat, pariatur voluptas illo alias!</P>
+                           </div>
+                        </div>
+                        <div class="rounded w-100" style="background: #FAE5EB;">
+                           <div>
+                              <button onclick="showFaqAns(this.id)" id="faq_2"
+                                 class="btn w-100 d-flex justify-content-between align-items-center p-2 px-4 f_size-2 "><span>Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit?</span><span><i id="icon_faq_2" class="bi bi-plus"></i></span></button>
+                           </div>
+                           <div id="ans_faq_2" class="p-2 px-4 border-top faq-content f_size-2" style="display: none;">
+                              <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi eveniet
+                                 cumque ab velit facere temporibus consectetur officiis excepturi repudiandae nulla
+                                 dolor in non mollitia placeat, pariatur voluptas illo alias!</P>
+                           </div>
+                        </div>
+                        <div class="rounded-3 w-100" style="background: #FAE5EB;">
+                           <div>
+                              <button onclick="showFaqAns(this.id)" id="faq_3"
+                                 class="btn w-100 d-flex justify-content-between align-items-center p-2 px-4 f_size-2  "><span class="text-sm-start d-lg-block">Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit?</span><span><i id="icon_faq_3" class="bi bi-plus"></i></span></button>
+                           </div>
+                           <div id="ans_faq_3" class="p-2 px-4 border-top faq-content f_size-2" style="display: none;">
+                              <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi eveniet
+                                 cumque ab velit facere temporibus consectetur officiis excepturi repudiandae nulla
+                                 dolor in non mollitia placeat, pariatur voluptas illo alias!</P>
+                           </div>
+                        </div>
+                        <div class="rounded-3 w-100" style="background: #FAE5EB;">
+                           <div>
+                              <button onclick="showFaqAns(this.id)" id="faq_4"
+                                 class="btn w-100 d-flex justify-content-between align-items-center p-2 px-4 f_size-2  "><span>Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit?</span><span><i id="icon_faq_4" class="bi bi-plus"></i></span></button>
+                           </div>
+                           <div id="ans_faq_4" class="p-2 px-4 border-top faq-content f_size-2" style="display: none;">
+                              <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi eveniet
+                                 cumque ab velit facere temporibus consectetur officiis excepturi repudiandae nulla
+                                 dolor in non mollitia placeat, pariatur voluptas illo alias!</P>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="row d-none">
+                     <div class="col-2">
+                     </div>
+                     <div class="col-8 justify-content-center align-items-center">
+                        <div class="accordion mt-5 mb-5 rounded-4 border-0 custom-accordion" id="accordionExample">
+                           <div class="text-center mb-3">
+                              <h5>Frequently Asked Questions</h5>
+                           </div>
+                           <button class="accordion-header rounded-4 border-0 mb-3">Lorem ipsum dolor sit amet,
+                              consectetur
+                              adipiscing elit ?</button>
+                           <div class="panel rounded-4 border-0 mb-3">
+                              <p>Firstly, you can select the suitable Pooja or Hawan and then once the Pooja or Hawan is
+                                 added in
+                                 cart then you can online methods like Credit Card, Drbit Card, Net Banking and UPI.</p>
+                           </div>
+
+                           <button class="accordion-header rounded-4 border-0 mb-3">Lorem ipsum dolor sit amet,
+                              consectetur
+                              adipiscing elit ?</button>
+                           <div class="panel rounded-4 border-0 mb-3">
+                              <p>Firstly, you can select the suitable Pooja or Hawan and then once the Pooja or Hawan is
+                                 added in
+                                 cart then you can online methods like Credit Card, Drbit Card, Net Banking and UPI.</p>
+                           </div>
+
+                           <button class="accordion-header rounded-4 border-0 mb-3">Lorem ipsum dolor sit amet,
+                              consectetur
+                              adipiscing elit ?</button>
+                           <div class="panel rounded-4 border-0 mb-3">
+                              <p>Firstly, you can select the suitable Pooja or Hawan and then once the Pooja or Hawan is
+                                 added in
+                                 cart then you can online methods like Credit Card, Drbit Card, Net Banking and UPI.</p>
+                           </div>
+
+                           <button class="accordion-header rounded-4 border-0 mb-3">Lorem ipsum dolor sit amet,
+                              consectetur
+                              adipiscing elit ?</button>
+                           <div class="panel rounded-4 border-0 mb-3">
+                              <p>Firstly, you can select the suitable Pooja or Hawan and then once the Pooja or Hawan is
+                                 added in
+                                 cart then you can online methods like Credit Card, Drbit Card, Net Banking and UPI.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-2">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer class="mt-5">
+      <div class="footer_container">
+        <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log m-auto d-block">
+        <ul class="d-flex justify-content-center flex-wrap mt-4">
+          <li class=" mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">About Us</a></li>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Contact Us</a></li>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Blog</a></li>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Privacy Policy</a></li>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Terms & Condition</a>
+          </li>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Cancelation Policy</a>
+          </li>
+  
+        </ul>
+        <ul class="d-flex justify-content-center mt-4">
+          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\paypal.png" alt=""
+                srcset="" height="19"></a></li>
+          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\mastercard.png" alt=""
+                srcset="" height="19"></a></li>
+          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\visa..png" alt="" srcset=""
+                height="19"></a></li>
+          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\paytm.png" alt="" srcset=""
+                height="19"></a></li>
+          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\rupay.png" alt="" srcset=""
+                height="19"></a></li>
+        </ul>
+        <p class="text-capitalize text-color1 text-center">© Copyright 2023, EasyPandit</p>
+      </div>
+  
+    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <script src="assets\script.js"></script>
+</body>
+
+</html>
