@@ -403,7 +403,63 @@ $('.custom-owl-next').click(function () {
   carousel.trigger('next.owl.carousel');
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Click event for the button with ID "dnone"
+  var dnoneButton = document.getElementById("dnone");
+  var firstModal = document.getElementById("firstModal");
+  var secModal = document.getElementById("secondModal");
+  var secbtn = document.getElementById("secBtn")
+  var primium = document.getElementById("premium")
+  var primiumBtn = document.getElementById("premiumBtn")
+  var login = document.getElementById("logIn")
 
+
+
+  if (dnoneButton && firstModal) {
+    dnoneButton.addEventListener("click", function () {
+      // Hide the "firstModal" element by setting its display property to "none"
+      firstModal.classList.add('d-none');
+      secModal.classList.remove('d-none');
+      secModal.classList.add('d-block');
+    });
+
+    if (secbtn && primium && primiumBtn) {
+      secbtn.addEventListener('click', function () {
+        secModal.classList.remove('d-block');
+        secModal.classList.add('d-none');
+        primium.classList.remove('d-none');
+        primium.classList.add('d-block');
+      });
+    }
+
+    if (primiumBtn && login) {
+      primiumBtn.addEventListener('click', function () {
+        primium.classList.remove('d-block');
+        primium.classList.add('d-none');
+        login.classList.remove('d-none');
+        login.classList.add('d-block');
+      });
+    }
+    
+    if (loginBtn && planModal) {
+      loginBtn.addEventListener('click', function () {
+        login.classList.remove('d-block');
+        login.classList.add('d-none');
+        planModal.classList.remove('d-none');
+        planModal.classList.add('d-block');
+      });
+    }
+  }
+});
+
+    // Handle item selection
+    dropdownItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        const selectedValue = item.textContent;
+        searchInput.value = selectedValue;
+      });
+    });
+    
 
 // video carousal code
 const video = document.getElementById('selected-video');
@@ -440,6 +496,7 @@ function showFaqAns(id) {
      $('#icon_' + id).removeClass('bi-plus').addClass('bi-dash')
   }
 }
+
 
 
 
