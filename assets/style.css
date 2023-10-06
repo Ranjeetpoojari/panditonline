@@ -78,6 +78,7 @@
 .linear-gradient{
     height:50px;
 }
+.text-prime{color:#C03}
 /* ******** theme end************* */
 /* ******** login form start ************************* */
 .login-container {
@@ -686,7 +687,6 @@ font-weight: 800;
     display: block;
     width: 100px;
     margin: 0 auto; /* Center the line horizontally */
-    
     border-radius: 20%;
     border-top: 5px solid transparent; /* Set a transparent border for the lines */
     border-image: linear-gradient(270deg, #C03 -4.75%, #FFF84A 100.42%); /* Set the border color as the linear gradient */
@@ -856,8 +856,15 @@ max-width:100% ;
 /* ************** allpandit cards ends ********** */
 /**************** pooja and pandit page end ****************/
 /*************** Checkout Page start*********/
-
-/* ************** Checkout Page end******** */
+.checkout .choose-btn{background:rgb(255 229 235);}
+/* .checkout-tab .inner-payment-tab .nav-link{border-bottom:2px solid #C03!important ;} */
+/* .checkout-tabs{display:flex;width: auto !important;; height: auto!important;} */
+.checkout-tabs .check-items{display:block;width:auto!important; height:40px !important; border: none;}
+.checkout-tabs .check-items button{border:none;color:#000;font-size: 16px; font-weight: 500;}
+.checkout-tabs .check-items button.active{border: none; border-bottom:2px solid #C03;}
+.checkout-input {position: relative;margin-top: 25px;}
+.checkout-input .form-label{position:absolute; top:-12px; font-size: 12px; left:10px; background: #fff;}
+/*************** Checkout Page end**:active****** */
 
 
 .modal-height {
@@ -936,7 +943,6 @@ max-width:100% ;
     width: 25px;
     height: 25px;
 }
-
 .modal-btn {
     bottom: 10%;
 }
@@ -1098,7 +1104,7 @@ max-width:100% ;
 /* part start */
 /* part end */
 /* ************ about end*********** */
-@media (max-width: 460px) {
+@media (max-width:460px) {
   
     .w-sm-35 {
         width: 35%;
@@ -1181,3 +1187,6 @@ max-width:100% ;
            .warning-w{width:320px;}
     
 }
+/* adity code of checkout start */
+
+/* adity code of checkout end */

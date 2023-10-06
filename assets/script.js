@@ -58,6 +58,7 @@ $(document).ready(function() {
         }
 });
  });
+ 
  $(document).ready(function() {
     $('#signup').on('click',function(event) {
         event.preventDefault()
@@ -75,7 +76,6 @@ $(document).ready(function() {
             isValid =false
         }
         else if(!regEx.test(name)){
-            
             $('#Fullname').addClass('border-danger');
             $('#fullnameerror').text('Please provide Valid name');
             isValid = false
@@ -353,8 +353,7 @@ $(document).ready(function() {
     }
   })
   $('.videocon_iteam').owlCarousel({
-    loop: true,
-    
+    loop: true, 
     nav: true,
     loop: true,
     dots: false,
@@ -362,14 +361,13 @@ $(document).ready(function() {
       0: {
         items: 2
       },
-    900: {
+    500:{
         items: 3
       }
     }
   })
   $('.testimonial_carousel').owlCarousel({
     loop: true,
-
     nav: true,
     loop: true,
     dots: true,
@@ -453,34 +451,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
     // Handle item selection
-    dropdownItems.forEach(function (item) {
-      item.addEventListener('click', function () {
-        const selectedValue = item.textContent;
-        searchInput.value = selectedValue;
-      });
-    });
+    // dropdownItems.forEach(function (item) {
+    //   item.addEventListener('click', function () {
+    //     const selectedValue = item.textContent;
+    //     searchInput.value = selectedValue;
+    //   });
+    // });
     
 
 // video carousal code
-const video = document.getElementById('selected-video');
-const playButton = document.getElementById('play-button');
+// const playButton = document.getElementById('playButton');
+// const video = document.getElementById('video');
+// document.addEventListener('DOMContentLoaded', function () {
 
-playButton.addEventListener('click', () => {
-  if (video.paused) {
-    video.play();
-    playButton.style.display = 'none'; // Hide the play button
-  } 
-});
-video.addEventListener('click', () => {
-    if (video.played) {
-      video.pause();
-      playButton.style.display = 'block'; // Hide the play button
-    } 
-  });
-  $(".owl-carousel").on("click", ".owl-item", function () {
-    var selectedVideoSrc = $(this).find("video").attr("src");
-    $("#selected-video").attr("src", selectedVideoSrc);
-});
+
+//   playButton.addEventListener('click', () => {
+//     if (video.paused) {
+//       video.play();
+//       playButton.style.display = 'none'; // Hide the play button
+//     }
+//   });
+
+//   video.addEventListener('click', () => {
+//     if (!video.paused) {
+//       video.pause();
+//       playButton.style.display = 'block'; // Show the play button
+//     }
+//   });
+// });
 
 
 function showFaqAns(id) {
