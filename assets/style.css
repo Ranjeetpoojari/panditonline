@@ -46,6 +46,7 @@
 .f_size-12{font-size:12px;}
 .f_size-4{font-size: calc(18.095px + (30 - 18.095)*(100vw - 320px) / (1920 - 320)) ;}
 .f_size-15{font-size: 15px;}
+.s_img-size{height:30px; width:30px;}
 .font-200 {
     font-weight: 200;
 }
@@ -857,6 +858,10 @@ max-width:100% ;
 /**************** pooja and pandit page end ****************/
 /*************** Checkout Page start*********/
 .checkout .choose-btn{background:rgb(255 229 235);}
+.checkout .image-grid{width:120px;display:flex; flex-wrap: wrap; }
+.checkout .image-grid a img{height: 46px; width: 46px; margin: 3px;}
+.checkout .image-grid a span{width: 50px; height:46px; text-align: center; border-radius:50px; color:#fff;}
+.checkout .check_out-pandit-card{width:320px;}
 /* .checkout-tab .inner-payment-tab .nav-link{border-bottom:2px solid #C03!important ;} */
 /* .checkout-tabs{display:flex;width: auto !important;; height: auto!important;} */
 .checkout-tabs .check-items{display:block;width:auto!important; height:40px !important; border: none;}
