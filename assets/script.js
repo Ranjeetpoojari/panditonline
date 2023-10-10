@@ -479,8 +479,43 @@ document.addEventListener("DOMContentLoaded", function () {
 //     }
 //   });
 // });
+$(document).ready(function() {
+  var owl = $('.owl-carousel');
 
+  // Initialize Owl Carousel
+  owl.owlCarousel();
 
+  // Handle video thumbnail click
+  $('.owl-carousel .item').on('click', function() {
+      updateSelectedVideo(this);
+  });
+
+  // Handle "Next" button click
+  $('.owl-next').click(function() {
+      owl.trigger('next.owl.carousel');
+      updateSelectedVideo(owl.find('.active .item'));
+  });
+
+  // Handle "Previous" button click
+  $('.owl-prev').click(function() {
+      owl.trigger('prev.owl.carousel');
+      updateSelectedVideo(owl.find('.active .item'));
+  });
+
+  // Function to update the selected video
+  function updateSelectedVideo(item) {
+      var videoSrc = $(item).find('video').attr('src');
+      var videoText = $(item).find('.video-text').text();
+      var videoTitle = $(item).find('h3').text();
+
+      $('#selected-video').attr('src', videoSrc);
+      $('.selected-video .video-text').text(videoText);
+      $('.selected-video h3').text(videoTitle);
+  }
+
+  // Set the initial video to the first video item by default
+  updateSelectedVideo(owl.find('.active .item'));
+});
 function showFaqAns(id) {
   // <!--  -->
   if ($('#ans_' + id).is(':visible')) {

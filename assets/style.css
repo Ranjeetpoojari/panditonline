@@ -783,7 +783,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.pandit_puja a:focus,.pandit_puja a:active{
+.pandit_puja a.active{
 background-color: #C03;
 color:#E4E4E7;
 max-width:100% ;
