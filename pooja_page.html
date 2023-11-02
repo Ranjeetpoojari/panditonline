@@ -36,8 +36,9 @@
 <body>
    <nav>
       <div class="container-fluid px-0">
-          <nav class="navbar-container bg-prim rounded d-none d-lg-block my-3">
-            <div class="contact-nav d-flex justify-content-between align-items-center  mx-4">
+        <div class="background-img">
+          <nav class="navbar-container bg-prim rounded d-none d-lg-block">
+            <div class="contact-nav d-flex justify-content-between align-items-center">
               <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log d-inline-block">
               <ul class="d-flex  align-items-center mb-0">
                 <li><img src="assets\images\location.svg" alt="">
@@ -63,13 +64,12 @@
             </div>
             <div class="container-link">
               <ul class="f_size-2 font-prime text-uppercase d-flex justify-content-between ">
-  
                 <li class="d-flex align-items-center"><a href="index.html" class="text-decoration-none text-color1">Home</a></li>
                 <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">All Pooja</a>
                 </li>
                 <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">Astrology
                     consultion</a></li>
-                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-warning">*Upgrade to
+                <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-warning">*Go
                     premium</a></li>
                 <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">articles</a>
                 </li>
@@ -79,11 +79,9 @@
                 </li>
                 <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">contact us</a>
                 </li>
-  
               </ul>
             </div>
           </nav>
-  
           <nav class="navbar-mobile bg-prim rounded d-block d-lg-none">
             <ul class="d-flex align-items-center justify-content-between mb-0 ps-0 h-100">
               <li class="d-flex ">
@@ -95,11 +93,9 @@
                   <img src="assets\images\search-normal.svg" alt="" srcset="">
                 </a>
               </li>
-  
               <li>
                 <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log d-inline-block">
               </li>
-  
               <li class="d-flex">
                 <a class="btn bg-prim d-flex h-100 d-flex align-items-center" data-bs-toggle="offcanvas"
                   href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -110,34 +106,35 @@
                 </a>
               </li>
             </ul>
-  
-  
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
               aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="assets\images\pandit_log.png" class="w-75" alt="" srcset=""></h5>
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
-                <div class="">
-                <ul class="p-0">
-                  <li><a href="index.html" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">Home</a></li>
-                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">ALL Pooja</a></li>
-                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">Astrogy consultion</a></li>
-                  <li><a href="#" class="text-uppercase font-prime text-decoration-none w-100 d-block pt-3 text-warning">Upgrade to Premium</a></li>
-                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">Articles</a></li>
-                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">Media</a></li>
-                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">blog</a></li>
-                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">About us</a></li>
-                  <li><a href="#" class="text-uppercase text-dark font-prime text-decoration-none w-100 d-block pt-3">contact us</a></li>
-                </ul>
+                <div>
+                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                  lists, etc.
                 </div>
                
               </div>
             </div>
+  
           </nav>
+         
         </div>
+      </div>
     </nav>
+   <main>
+ <marquee  behavior="carousel" direction="" class="d-flex bg-sec text-light f_size-12 font-prime">
+  <img src="assets\images\om.webp" alt="" srcset="" class="mx-1 mb-1">
+  <p class="d-inline-block mx-2 my-2">🙏 Welcome to EasyPandit - Your Trusted Source for Pandit Booking Services 🙏</p>
+  <img src="assets\images\om.webp" alt="" srcset="" class="mx-1 mb-1">
+  <p class="d-inline-block mx-2 my-2">🙏 Welcome to EasyPandit - Your Trusted Source for Pandit Booking Services 🙏</p>
+  <img src="assets\images\om.webp" alt="" srcset="" class="mx-1 mb-1">
+  <p class="d-inline-block mx-2 my-2">🙏 Welcome to EasyPandit - Your Trusted Source for Pandit Booking Services 🙏</p>
+</marquee>
    <main>
       <div class="container-fluid mt-5">
          
@@ -351,33 +348,53 @@
          </div>
       </div>
    </main>
-   <footer class="mt-5">
-      <div class="footer_container">
-        <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log m-auto d-block">
+   <footer class="mt-5 pb-2">
+      <div class="container-email">
+        <div class="row mx-0 mx-md-5">
+          <div class="col-lg-6">
+            <p class="text-capitalize text-light f_size-30 my-3 my-lg-5">Everyone gets something <br> special. Sign up to be everyone</p>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class=" w-75 my-lg-5">
+              <input type="email" name="email" id="" placeholder="Email" class="w-100 rounded-pill border border-light">
+              <label for="" class="float-end"><i class="bi bi-arrow-right fs-3 fs-lg-2 text-prime px-4 rounded-pill bg-light"></i></label>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <hr class="text-light border border-light">
+      <div class="footer_container ">
+        <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log m-auto d-block mt-4 bt-3">
+        <div class=" col-md-7 col-lg-6 col-xl-4 m-auto">
+          <p class="text-light text-center f_size-2 font-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
         <ul class="d-flex justify-content-center flex-wrap mt-4">
-          <li class=" mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">About Us</a></li>
-          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Contact Us</a></li>
-          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Blog</a></li>
-          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Privacy Policy</a></li>
-          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Terms & Condition</a>
+          <li class=" mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">About Us</a></li>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">Contact Us</a></li>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">Blog</a></li>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">Privacy Policy</a></li>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize  f_size-2 text-decoration-none text-light fs-6 font-500">Terms & Condition</a>
           </li>
-          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize text-color1 fs-6 font-500">Cancelation Policy</a>
+          <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">Cancelation Policy</a>
           </li>
   
         </ul>
         <ul class="d-flex justify-content-center mt-4">
-          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\paypal.png" alt=""
+          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\PayPal.webp" alt=""
                 srcset="" height="19"></a></li>
-          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\mastercard.png" alt=""
+          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\mastercard .webp" alt=""
                 srcset="" height="19"></a></li>
-          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\visa..png" alt="" srcset=""
+          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\Visa Inc..webp" alt="" srcset=""
                 height="19"></a></li>
-          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\paytm.png" alt="" srcset=""
+          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\Paytm.webp" alt="" srcset=""
                 height="19"></a></li>
-          <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\rupay.png" alt="" srcset=""
-                height="19"></a></li>
+          
         </ul>
-        <p class="text-capitalize text-color1 text-center">© Copyright 2023, EasyPandit</p>
+        <hr class="text-light border border-light">
+        <p class="text-capitalize text-light text-center f_size-2 ">© Copyright 2023, EasyPandit</p>
       </div>
   
     </footer>

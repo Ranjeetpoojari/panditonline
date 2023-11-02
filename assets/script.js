@@ -1,4 +1,172 @@
+$('#owlProfile').owlCarousel({
+  autoWidth: true,
+  dots: false,
+  loop: false,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 3,
+    }
+  }
+});
+$('#owl-reviews').owlCarousel({
+  loop: false,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      dots: true,
+      items: 1
+    },
+    600: {
+      dots: true,
+      items: 2
+    },
+    1000: {
+      items: 3,
+      dots: false,
 
+    }
+  }
+});
+var thumbnails = document.getElementById("owlProfile");
+var imgs = document.querySelectorAll(".item .img-circle img");
+var main = document.querySelector("#main img");
+// var i = 0;
+
+for (let i = 0; i < imgs.length; i++) {
+  let img = imgs[i];
+
+  img.addEventListener("click", function () {
+    main.src = this.src;
+  });
+}
+const imgCircleButtons = document.querySelectorAll(".img-circle");
+// Add a click event listener to each "img-circle" button
+imgCircleButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Remove the "border-dashed" class from all "img-circle" buttons
+    imgCircleButtons.forEach((btn) => {
+      btn.classList.remove("border-dashed");
+    });
+
+    // Add the "border-dashed" class to the clicked button
+    button.classList.add("border-dashed");
+  });
+});
+
+$(document).ready(function(){
+  $("#creditcard-form-btn").click(function(){
+    var cardNumber = $("#cardNumber").val();
+        var cardholderName = $("#cardholderName").val();
+        var expiryDate = $("#expiryDate").val();
+        var cvv = $("#cvv").val();
+        var upiPin = $("#upiPin").val();
+    
+        var cardNumberPattern = /^\d{16}$/; // 16 digits
+        var cardholderNamePattern = /^[A-Za-z\s]+$/; // Only letters and spaces
+        var expiryDatePattern = /^(0[1-9]|1[0-2])\/\d{2}$/; // MM/YY format
+        var cvvPattern = /^\d{3}$/; // 3 digits
+        var upiPinPattern = /^\d{4,6}$/;
+        var checkBox = $("#check-out-dis").is(":checked");
+    
+        var isValid = true;
+    
+        if (!cardNumber.match(cardNumberPattern)) {
+          $("#cardNumbererror").text("Invalid card number. It should be a 16-digit number.");
+          $("#cardNumber").addClass("border-danger");
+          isValid = false;
+        }
+        else{
+          $("#cardNumbererror").text("");
+          $("#cardNumber").removeClass("border-danger");
+
+        }
+    
+        if (!cardholderName.match(cardholderNamePattern)) {
+          $("#cardholderNameerror").text("Invalid cardholder name. Use only letters and spaces.");
+          $("#cardholderName").addClass("border-danger");
+          isValid = false;
+        }else{
+          $("#cardholderNameerror").text("");
+          $("#cardholderName").removeClass("border-danger");
+
+        }
+        
+        if (!expiryDate.match(expiryDatePattern)) {
+          $("#expiryDateerror").text("Invalid expiry date. Use MM/YY format.");
+          $("#expiryDate").addClass("border-danger");
+          isValid = false;
+        }else{
+          $("#expiryDateerror").text("");
+          $("#expiryDate").removeClass("border-danger");
+
+        }
+        
+        if (!cvv.match(cvvPattern)) {
+          $("#cvverror").text("Enter 3-digit number.");
+          $("#cvv").addClass("border-danger");
+          
+          isValid = false;
+        }else{
+          $("#cvverror").text("");
+          $("#cvv").removeClass("border-danger");
+        }
+        if (!upiPin.match(upiPinPattern)) {
+          $("#upiPinerror").text("Invalid UPI PIN. It should be a 4 to 6-digit number.");
+          $("#upiPin").addClass("border-danger");
+          
+          isValid = false;
+        }else{
+          $("#upiPinerror").text("");
+          $("#upiPin").removeClass("border-danger");
+        }
+      if(!checkBox){
+       
+        $(".check-out-dis").addClass("text-danger");
+      }else{
+        $(".check-out-dis").removeClass("text-danger");
+      }
+        if (!isValid) {
+          isValid = true;
+          event.preventDefault(); // Prevent form submission
+         
+        }
+  });
+  });
+$(document).ready(function(){
+  $("#creditcard-form-btn1").click(function(){
+        var upiPin = $("#upiPin1").val();
+        var checkBox = $("#check-out-dis1").is(":checked");
+        var upiPinPattern = /^\d{4,6}$/;
+        var isValid = true;
+        if (!upiPin.match(upiPinPattern)) {
+          $("#upiPinerror1").text("Invalid UPI PIN. It should be a 4 to 6-digit number.");
+          $("#upiPin1").addClass("border-danger");
+          
+          isValid = false;
+        }else{
+          $("#upiPinerror1").text("");
+          $("#upiPin1").removeClass("border-danger");
+        }
+      if(!checkBox){ 
+        $(".check-out-dis1").addClass("text-danger");
+      }else{
+        $(".check-out-dis1").removeClass("text-danger");
+      }
+        if (!isValid) {
+          isValid = true;
+          event.preventDefault(); 
+        }
+  });
+  });
 //  login form validation
 $(document).ready(function() {
     $('#Loginform').on('submit',function(event) {
@@ -366,18 +534,57 @@ $(document).ready(function() {
       }
     }
   })
-  $('.testimonial_carousel').owlCarousel({
+  $("#puja-card[data-carousel-id='9']").owlCarousel({
+    items: 4,
     loop: true,
-    nav: true,
-    loop: true,
-    dots: true,
-    responsive: {
-      0: {
-        items: 1
-      }
+  });
+  // Custom button next for the first carousel
+  $("#custom-button-next[data-carousel-id='9']").click(function () {
+    $("#puja-card1[data-carousel-id='9']").trigger("next.owl.carousel");
+  });
 
+  // Custom button previous for the first carousel
+  $("#custom-button-per[data-carousel-id='9']").click(function () {
+    $("#puja-card1[data-carousel-id='9']").trigger("prev.owl.carousel");
+  });
+//   $(document).ready(function () {
+//     const carousel = $("#puja-card");
+    
+//     // Custom button next
+//     $("#custom-button-next").click(function () {
+//       carousel.trigger("next.owl.carousel");
+//       console.log("yes");
+//     });
+    
+//     // Custom button previous
+//     $("#custom-button-per").click(function () {
+//       carousel.trigger("prev.owl.carousel");
+//       console.log("yes");
+//     });
+//   });
+  $('#testimonal').owlCarousel({
+
+    loop:true,
+    margin:100,
+    nav:true,
+   center:true,
+    responsive:{
+  
+        0:{
+            items:1
+        },
+  
+        640:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+        
     }
-  })
+  });
+
+
 
 $('.custom-owl-prev').click(function () {
   // Find the data-carousel-id of the clicked previous button
@@ -391,64 +598,155 @@ $('.custom-owl-prev').click(function () {
 });
 
 $('.custom-owl-next').click(function () {
-  // Find the data-carousel-id of the clicked next button
+  
   var carouselId = $(this).closest('.custom-owl-controls').data('carousel-id');
-  
-  // Find the carousel associated with the data-carousel-id
+  console.log(carouselId);
   var carousel = $('.owl-carousel[data-carousel-id="' + carouselId + '"]');
-  
-  // Trigger the 'next.owl.carousel' event only for that carousel
   carousel.trigger('next.owl.carousel');
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
-  // Click event for the button with ID "dnone"
-  var dnoneButton = document.getElementById("dnone");
-  var firstModal = document.getElementById("firstModal");
-  var secModal = document.getElementById("secondModal");
-  var secbtn = document.getElementById("secBtn")
-  var primium = document.getElementById("premium")
-  var primiumBtn = document.getElementById("premiumBtn")
-  var login = document.getElementById("logIn")
-
-
-
-  if (dnoneButton && firstModal) {
-    dnoneButton.addEventListener("click", function () {
-      // Hide the "firstModal" element by setting its display property to "none"
-      firstModal.classList.add('d-none');
-      secModal.classList.remove('d-none');
-      secModal.classList.add('d-block');
+    var dnoneButton = document.getElementById("results");
+    // var dnoneButton1 = document.getElementById("dropdown");
+    // var firstModal = document.getElementById("firstModal");
+    var secModal = document.getElementById("secondModal");
+    $(dnoneButton).click(function(){
+        secModal.classList.remove('d-none');
+        secModal.classList.add('d-block');
+       
+        $("#results").addClass("d-none");
+        
     });
-
-    if (secbtn && primium && primiumBtn) {
-      secbtn.addEventListener('click', function () {
-        secModal.classList.remove('d-block');
-        secModal.classList.add('d-none');
-        primium.classList.remove('d-none');
-        primium.classList.add('d-block');
-      });
-    }
-
-    if (primiumBtn && login) {
-      primiumBtn.addEventListener('click', function () {
-        primium.classList.remove('d-block');
-        primium.classList.add('d-none');
-        login.classList.remove('d-none');
-        login.classList.add('d-block');
-      });
-    }
-    
-    if (loginBtn && planModal) {
-      loginBtn.addEventListener('click', function () {
-        login.classList.remove('d-block');
-        login.classList.add('d-none');
-        planModal.classList.remove('d-none');
-        planModal.classList.add('d-block');
-      });
-    }
-  }
+    $("#search-input").click(function(){
+        $("#results").removeClass("d-none");
+    });
+   
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var dnoneButton = document.getElementById("results1");
+    // var dnoneButton1 = document.getElementById("dropdown");
+    // var firstModal = document.getElementById("firstModal");
+    var secModal = document.getElementById("secondModal");
+    $(dnoneButton).click(function(){
+      
+       
+        $("#results1").addClass("d-none");
+        
+    });
+    $("#search-input1").click(function(){
+        $("#results1").removeClass("d-none");
+    });
+   
+});
+$(document).ready(function(){
+    $("#back-btm").addClass("d-none");
+    $(".pooja-title").addClass('d-none');
+    $('#adv_search-con1').addClass('d-none');
+    $("#puja-next").click(function(){
+        event.preventDefault();
+        var selectedDate = new Date($("#dateInput").val());
+        if (!selectedDate || isNaN(selectedDate)) {
+          
+            $('#wantpoojaError').text('Please select the data of pooja');
+          }else {
+            var today = new Date();
+            var minAllowedDate = new Date(today);
+            minAllowedDate.setDate(today.getDate() + 2); // Set the minimum allowed date to be 2 days in the future.
+        
+            if (selectedDate < minAllowedDate) {
+                 $('#wantpoojaError').text('Please provide a date starting from the day after tomorrow');
+        } else {
+                $('#wantpoojaError').text('');
+                $('#premium').removeClass('d-none');
+                $('#secondModal').addClass('d-none');
+                $('#adv_search-con').addClass('d-none');
+                $(".Freemium").addClass('d-none');
+                $(".pooja-title").removeClass('d-none');
+                $("#back-btm").removeClass('d-none');
+            }
+          }
+    
+    });
+    $(".pooja-title").click(function(){
+        $("#adv_search-con1").removeClass("d-none");
+        $(".pooja-title").addClass("d-none");
+    });
+    $("#results1").click(function(){
+        $(".pooja-title").removeClass("d-none");
+        $("#adv_search-con1").addClass("d-none");
+    });
+    $("#back-btm").click(function(){
+        if($('#premium').hasClass('d-none')){
+            $('#premium').removeClass('d-none');
+            $("#planModal").addClass("d-none");
+         
+        }else{
+            $('#secondModal').removeClass('d-none');
+            $("#back-btm").addClass('d-none');
+            $(".Freemium").removeClass('d-none');
+            $(".pooja-title").addClass('d-none');
+            $('#premium').addClass('d-none');
+            $('#adv_search-con').removeClass('d-none');
+        }
+    });
+    $("#cont-Freemium-btn").click(function(){
+        $("#planModal").removeClass("d-none");
+        $('#premium').addClass('d-none');
+    });
+    $(".plan-select-item").focus(function(){
+        $("#continue-billing").removeClass('disabled');
+    });
+});
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Click event for the button with ID "dnone"
+//     var dnoneButton = document.getElementById("results");
+//     var firstModal = document.getElementById("firstModal");
+//     var secModal = document.getElementById("secondModal");
+//     var secbtn = document.getElementById("secBtn")
+//     var primium = document.getElementById("premium")
+//     var primiumBtn = document.getElementById("premiumBtn")
+//     var login = document.getElementById("logIn")
+  
+  
+  
+//     if (dnoneButton && firstModal) {
+//       dnoneButton.addEventListener("click", function () {
+//         // Hide the "firstModal" element by setting its display property to "none"
+//         // firstModal.classList.add('d-none');
+//         secModal.classList.remove('d-none');
+//         secModal.classList.add('d-block');
+//       });
+  
+//       if (secbtn && primium && primiumBtn) {
+//         secbtn.addEventListener('click', function () {
+//           secModal.classList.remove('d-block');
+//           secModal.classList.add('d-none');
+//           primium.classList.remove('d-none');
+//           primium.classList.add('d-block');
+//         });
+//       }
+  
+//       if (primiumBtn && login) {
+//         primiumBtn.addEventListener('click', function () {
+//           primium.classList.remove('d-block');
+//           primium.classList.add('d-none');
+//           login.classList.remove('d-none');
+//           login.classList.add('d-block');
+//         });
+//       }
+      
+//       if (loginBtn && planModal) {
+//         loginBtn.addEventListener('click', function () {
+//           login.classList.remove('d-block');
+//           login.classList.add('d-none');
+//           planModal.classList.remove('d-none');
+//           planModal.classList.add('d-block');
+//         });
+//       }
+//     }
+//   });
+//    
 
     // Handle item selection
     // dropdownItems.forEach(function (item) {
@@ -460,75 +758,180 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
 // video carousal code
-// const playButton = document.getElementById('playButton');
-// const video = document.getElementById('video');
-// document.addEventListener('DOMContentLoaded', function () {
+
+$(document).ready(function () {
+    $('.limited-paragraph').each(function () {
+        const words = $(this).text().split(' ');
+
+        if (words.length > 15) {
+            $(this).text(words.slice(0, 15).join(' ') + '...');
+        }
+    });
+});
+var splide = new Splide( '#first-cards', {
+
+    // type   : 'loop',
+  perPage: 4,
+
+  breakpoints: {
+      // Change the number of slides at different viewport widths
+      1200:{
+        perPage: 3,
+      },
+      768: {
+        perPage: 2, // Number of slides to show on tablets
+      },
+      480: {
+        perPage: 1, // Number of slides to show on smaller screens
+      },
+    },
+  }).mount();
+ 
+var splide = new Splide( '#sec', {
+
+    type   : 'loop',
+  perPage: 3,
+  focus  : 'center',
+ 
+  breakpoints: {
+     
+   
+      960: {
+        perPage: 1, 
+      },
+    },
+  }).mount();
+var splide = new Splide( '#sec1', {
+
+    type   : 'loop',
+  perPage: 1,
+  focus  : 'center',
+
+  breakpoints: {
+      // Change the number of slides at different viewport widths
+   
+    
+    },
+  }).mount();
 
 
-//   playButton.addEventListener('click', () => {
-//     if (video.paused) {
-//       video.play();
-//       playButton.style.display = 'none'; // Hide the play button
+// Handle click events on video items
+// ++++++++++++++++++++++++++++++++++++++++++++ video start
+$('.video-con').on('click', function () {
+
+    var videoUrl = $(this).find('video').attr('src');
+    var videoText = $(this).find('.none-selected-text').text();
+    var selectedVideo = $('#selected-video');
+    var videoTextElement = $('.video-text-select');
+
+    selectedVideo.attr('src', videoUrl);
+    videoTextElement.text(videoText);
+
+  
+
+  });
+
+  $(document).ready(function() {
+    const video = document.getElementById("selected-video");
+    const playPauseButton = $("#playPauseButton");
+
+    playPauseButton.on("click", function() {
+      if (video.paused) {
+        video.play();
+        playPauseButton.html("&#9656;");
+        $('#playPauseButton').addClass("d-none");
+
+      } else {
+        video.pause();
+        playPauseButton.html("&#9656;");
+      }
+    });
+  
+    $(video).on("click", function() {
+        if (video.paused) {
+          video.play();
+          $('#playPauseButton').addClass("d-none");  
+        } else {
+            video.pause();
+            $('#playPauseButton').removeClass("d-none");  
+        }
+      });
+     
+    });
+ 
+    $(document).ready(function() {
+        const video = $("#selected-video")[0]; // Get the video element
+  
+        $("#full-screen-button").on("click", function() {
+          if (!document.fullscreenElement) {
+            video.requestFullscreen();
+          } else {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            }
+          }
+        });
+      });
+// ++++++++++++++++++++++++++++++++++++++++ end video
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+
+
+// profile img 
+
+// $(document).ready(function() {
+//   $("#creditcard-form-btn").click(function(event) {
+//     var cardNumber = $("#cardNumber").val();
+//     var cardholderName = $("#cardholderName").val();
+//     var expiryDate = $("#expiryDate").val();
+//     var cvv = $("#cvv").val();
+
+//     var cardNumberPattern = /^\d{16}$/; // 16 digits
+//     var cardholderNamePattern = /^[A-Za-z\s]+$/; // Only letters and spaces
+//     var expiryDatePattern = /^(0[1-9]|1[0-2])\/\d{2}$/; // MM/YY format
+//     var cvvPattern = /^\d{3}$/; // 3 digits
+
+//     var isValid = true;
+
+//     if (!cardNumber.match(cardNumberPattern)) {
+//       alert("Invalid card number. It should be a 16-digit number.");
+//       isValid = false;
 //     }
-//   });
 
-//   video.addEventListener('click', () => {
-//     if (!video.paused) {
-//       video.pause();
-//       playButton.style.display = 'block'; // Show the play button
+//     if (!cardholderName.match(cardholderNamePattern)) {
+//       alert("Invalid cardholder name. Use only letters and spaces.");
+//       isValid = false;
+//     }
+
+//     if (!expiryDate.match(expiryDatePattern)) {
+//       alert("Invalid expiry date. Use MM/YY format.");
+//       isValid = false;
+//     }
+
+//     if (!cvv.match(cvvPattern)) {
+//       alert("Invalid CVV. It should be a 3-digit number.");
+//       isValid = false;
+//     }
+
+//     if (!isValid) {
+//       isValid = true;
+//       event.preventDefault(); // Prevent form submission
 //     }
 //   });
 // });
-$(document).ready(function() {
-  var owl = $('.owl-carousel');
 
-  // Initialize Owl Carousel
-  owl.owlCarousel();
-
-  // Handle video thumbnail click
-  $('.owl-carousel .item').on('click', function() {
-      updateSelectedVideo(this);
-  });
-
-  // Handle "Next" button click
-  $('.owl-next').click(function() {
-      owl.trigger('next.owl.carousel');
-      updateSelectedVideo(owl.find('.active .item'));
-  });
-
-  // Handle "Previous" button click
-  $('.owl-prev').click(function() {
-      owl.trigger('prev.owl.carousel');
-      updateSelectedVideo(owl.find('.active .item'));
-  });
-
-  // Function to update the selected video
-  function updateSelectedVideo(item) {
-      var videoSrc = $(item).find('video').attr('src');
-      var videoText = $(item).find('.video-text').text();
-      var videoTitle = $(item).find('h3').text();
-
-      $('#selected-video').attr('src', videoSrc);
-      $('.selected-video .video-text').text(videoText);
-      $('.selected-video h3').text(videoTitle);
-  }
-
-  // Set the initial video to the first video item by default
-  updateSelectedVideo(owl.find('.active .item'));
-});
-function showFaqAns(id) {
-  // <!--  -->
-  if ($('#ans_' + id).is(':visible')) {
-
-     $('#ans_' + id).slideUp()
-     $('#icon_' + id).removeClass('bi-dash').addClass('bi-plus')
-  } else {
-     $('.faq-content').hide()
-
-     $('#ans_' + id).slideDown()
-     $('#icon_' + id).removeClass('bi-plus').addClass('bi-dash')
-  }
-}
 
 
 

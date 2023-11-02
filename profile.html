@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Pandit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,600;10..48,800&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- link icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="assets\style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container-fluid px-0">
+      <div class="background-img">
+        <nav class="navbar-container bg-prim rounded d-none d-lg-block">
+          <div class="contact-nav d-flex justify-content-between align-items-center">
+            <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log d-inline-block">
+            <ul class="d-flex  align-items-center mb-0">
+              <li><img src="assets\images\location.svg" alt="">
+                <select name="" id="" class="border border-0 f_size-2 font-prime text-capitalize">
+                  <option value="" selected>Mumbai&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                  <option value="">Puna&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                </select>
+              </li>
+              <li class="align-self-center">
+                <a href="" class="bg-sec rounded-pill text-light text-capitalize text-decoration-none d-inline-block">
+                  <img src="assets\images\call-calling.svg" alt="" class="">&nbsp;customer support</a>
+              </li>
+              <li>
+                <img src="assets\images\shopping-cart.svg" alt="" srcset="">
+              </li>
+              <li>
+                <img src="assets\images\profile.svg" alt="" srcset="">
+              </li>
+              <li>
+                <img src="assets\images\search-normal.svg" alt="" srcset="">
+              </li>
+            </ul>
+          </div>
+          <div class="container-link">
+            <ul class="f_size-2 font-prime text-uppercase d-flex justify-content-between ">
+              <li class="d-flex align-items-center"><a href="index.html" class="text-decoration-none text-color1">Home</a></li>
+              <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">All Pooja</a>
+              </li>
+              <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">Astrology
+                  consultion</a></li>
+              <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-warning">*Go
+                  premium</a></li>
+              <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">articles</a>
+              </li>
+              <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">media</a></li>
+              <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">blog</a></li>
+              <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">about us </a>
+              </li>
+              <li class="d-flex align-items-center"><a href="" class="text-decoration-none text-color1">contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="navbar-mobile bg-prim rounded d-block d-lg-none">
+          <ul class="d-flex align-items-center justify-content-between mb-0 ps-0 h-100">
+            <li class="d-flex ">
+              <a class="btn bg-prim d-flex h-100 d-flex align-items-center" data-bs-toggle="offcanvas"
+                href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <img src="assets\images\menu.svg" alt="" srcset="">
+              </a>
+              <a class="btn bg-prim d-flex h-100 d-flex align-items-center">
+                <img src="assets\images\search-normal.svg" alt="" srcset="">
+              </a>
+            </li>
+            <li>
+              <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log d-inline-block">
+            </li>
+            <li class="d-flex">
+              <a class="btn bg-prim d-flex h-100 d-flex align-items-center" data-bs-toggle="offcanvas"
+                href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <img src="assets\images\profile.svg" alt="" srcset="">
+              </a>
+              <a class="btn bg-prim d-flex h-100 d-flex align-items-center">
+                <img src="assets\images\shopping-cart.svg" alt="" srcset="">
+              </a>
+            </li>
+          </ul>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+              </div>
+             
+            </div>
+          </div>
+
+        </nav>
+       
+      </div>
+    </div>
+  </nav>
+ <main>
+<marquee  behavior="carousel" direction="" class="d-flex bg-sec text-light f_size-12 font-prime">
+<img src="assets\images\om.webp" alt="" srcset="" class="mx-1 mb-1">
+<p class="d-inline-block mx-2 my-2">🙏 Welcome to EasyPandit - Your Trusted Source for Pandit Booking Services 🙏</p>
+<img src="assets\images\om.webp" alt="" srcset="" class="mx-1 mb-1">
+<p class="d-inline-block mx-2 my-2">🙏 Welcome to EasyPandit - Your Trusted Source for Pandit Booking Services 🙏</p>
+<img src="assets\images\om.webp" alt="" srcset="" class="mx-1 mb-1">
+<p class="d-inline-block mx-2 my-2">🙏 Welcome to EasyPandit - Your Trusted Source for Pandit Booking Services 🙏</p>
+</marquee>
+
+  <main>
+
+    <div class="container-fluid">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb ps-5 d-flex align-items-center">
+          <a href="#" class="nav-link text-capitalize mx-2">Home</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="" class="nav-link text-capitalize mx-2">all Poojas</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="" class="nav-link text-capitalize mx-2"> pandits</a>
+          <i class="bi bi-chevron-right"></i>
+          <a href="" class="nav-link text-capitalize mx-2"> kishan chaubey</a>
+        </ol>
+      </nav>
+      <div class="container d-flex flex-lg-column flex-column-reverse justify-content-center align-items-center mt-5">
+        <div class="d-lg-flex flex-wrap justify-content-xxl-center justify-content-lg-between justify-content-center">
+          <div class="col-lg-5 col-md-10 col-12 m-lg-0 m-auto">
+            <div class="imgbox position-relative d-flex justify-content-center align-items-center" id="main">
+              <img src="assets/images/pandit4.png" alt="" class="img-cover rounded-4">
+              <div class="position-absolute top-0 end-0 bg-warning px-2 py-1 rounded-2 text-white fs-5 m-3"><i
+                  class="bi bi-star-fill px-1"></i> 4.3</div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-7  mt-lg-0 mt-md-5 mt-3 ps-xl-0 ps-lg-4">
+            <div
+              class="d-flex justify-content-md-between align-items-md-center align-items-start flex-md-row flex-column-reverse">
+              <h3 class="text-capitalize pt-md-0 pt-3 font-600">श्री. kishan chaubey </h3>
+              <div class="d-flex rounded bg-light-gray px-2 py-2">
+                <input type="text" class="border- inuputText bg-light-gray" value="#1556822" id="myInput">
+
+                <div class="toolcopy">
+                  <button class="toolbtn bg-light-gray" onclick="myFunction()" onmouseout="outFunc()">
+                    <span class="toolcopytext" id="myToolcopy">Copy to clipboard</span>
+                    <i class="bi bi-copy"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <p class="f_size-15 col-md-9 lh-1 font-400">Lorem Ipsum is simply dummy text of the printing and
+              typesetting
+              industry.
+              Lorem
+              Ipsum has been
+              the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+              and
+              scrambled it to make a type specimen book.</p>
+            <div class="col-xxl-6 col-md-9 mt-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary text-capitalize mb-1 f_size-20 col-md-8 col-9">Years of experience</p>
+                <p class="font-600 mb-1 f_size-20 col-md-4 col-3">: 20 Yrs</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary text-capitalize mb-1 f_size-20 col-md-8 col-9">total pooja performed</p>
+                <p class="font-600 mb-1 f_size-20 col-md-4 col-3">: 350 +</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-secondary text-capitalize mb-1 f_size-20 col-md-8 col-9">age</p>
+                <p class="font-600 mb-1 f_size-20 col-md-4 col-3">: 55 Y/O</p>
+              </div>
+            </div>
+
+            <p class="text-secondary f_size-15 text-capitalize gap-top-3rem mb-1">Language Known</p>
+            <div class="gap-5">
+              <span class="text-capitalize lang text-prime rounded font-500 fs-14 mx-1">hindi</span>
+              <span class="text-capitalize lang text-prime rounded font-500 fs-14 mx-1">marathi</span>
+              <span class="text-capitalize lang text-prime rounded font-500 fs-14 mx-1">tamil</span>
+            </div>
+            <p class="text-secondary f_size-15 font-400 gap-top-3rem mb-1">Prefered countries to travel for Puja</p>
+            <div class="">
+              <span class="text-capitalize lang text-prime rounded font-500 fs-14 mx-1">us</span>
+              <span class="text-capitalize lang text-prime rounded font-500 fs-14 mx-1">uk</span>
+              <span class="text-capitalize lang text-prime rounded font-500 fs-14 mx-1">japan</span>
+            </div>
+            <div class="d-flex align-items-center gap-top-4 gap-md-4 gap-2 mt-5">
+              <a href="tel:+91 7771595555"
+                class="whatsp-green nav-link ps-md-3 ps-2 pe-md-5 pe-sm-4 pe-3 py-sm-3 py-2  h-75 rounded-pill text-center d-flex justify-content-center align-items-center fs-18">
+                <i class="bi bi-telephone-fill px-md-3 px-sm-2 px-1"></i>+91 7771595555
+              </a>
+              <a href="https://wa.me/+917771595555" target="_blank"
+                class="nav-link p-md-3 p-3 rounded-circle bg-light-gray"><img src="assets/images/whtsp-icon.png"
+                  height="34.17" alt="" class=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-11 col-12 mt-5 px-xl-5 owl-carousel owl-theme" id="owlProfile">
+          <div class="item">
+            <button class="border-0 btnProfile">
+              <button class="img-circle none-border bg-transparent">
+                <img src="assets/images/pandit.png" alt="" class="img-cover rounded-circle">
+              </button>
+              <p class="text-capitalize fs-12 text-center font-500 text-nav">anurag mishra</p>
+            </button>
+          </div>
+
+          <div class="item">
+            <button class="border-0 btnProfile">
+              <button class="img-circle none-border bg-transparent">
+                <img src="assets/images/pandit2.png" alt="" class="img-cover rounded-circle">
+              </button>
+              <p class="text-capitalize fs-12 text-center font-500 text-nav">raman mishra</p>
+            </button>
+          </div>
+          <div class="item">
+            <button class="border-0 btnProfile">
+              <button class="img-circle none-border bg-transparent">
+                <img src="assets/images/pandit3.png" alt="" class="img-cover rounded-circle">
+              </button>
+              <p class="text-capitalize fs-12 text-center font-500 text-nav">durgesh pandey</p>
+            </button>
+          </div>
+
+          <div class="item">
+            <button class="border-0 btnProfile">
+              <button class="img-circle none-border bg-transparent">
+                <img src="assets/images/pandit5.png" alt="" class="img-cover rounded-circle">
+              </button>
+              <p class="text-capitalize fs-12 text-center font-500 text-nav">amit mishra</p>
+            </button>
+          </div>
+
+          <div class="item">
+            <button class="border-0 btnProfile">
+              <button class="img-circle none-border border-dashed">
+                <img src="assets/images/pandit4.png" alt="" class="img-cover rounded-circle">
+              </button>
+              <p class="text-capitalize fs-12 text-center font-500 text-nav">kishan chaubey</p>
+            </button>
+          </div>
+          
+
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="col-lg-7 col-md-9 col-12 mt-5 bg-light-yellow rounded-4 border border-warning border-2">
+          <p class="text-capitalize f_size-10 m-0 px-md-4 px-3 py-3 text-dark-yellow"><span class="fw-bold">note
+              :</span> Lorem
+            ipsum dolor sit amet,
+            consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-xl-center justify-content-between align-items-center">
+        <div class="col-xxl-10 col-12">
+          <h1 class="text-uppercase text-center py-5 fw-500">Reviews</h1>
+
+          <div class="owl-carousel owl-theme" id="owl-reviews">
+            <div class="item">
+              <div class="px-xl-2 px-1">
+                <div class="review-profile p-4 rounded-5">
+                  <div class="d-flex gap-3">
+                    <div class="h-61-img">
+                      <img src="assets/images/pandit4.png" alt="" class="rounded-circle img-cover">
+                    </div>
+                    <div class="">
+                      <h6 class="f_size-15 font-500 mb-0 text-capitalize">ranjeet yadav</h6>
+                      <i class="light f_size-15">26 June 2023</i>
+                      <div class="d-flex">
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="pt-3 fs-14">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum
+                    dolore eu fugiat nulla pariatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="px-xl-2 px-1">
+                <div class="review-profile p-4 rounded-5">
+                  <div class="d-flex gap-3">
+                    <div class="h-61-img">
+                      <img src="assets/images/pandit4.png" alt="" class="rounded-circle img-cover">
+                    </div>
+                    <div class="">
+                      <h6 class="f_size-15 font-500 mb-0 text-capitalize">ranjeet yadav</h6>
+                      <i class="light f_size-15">26 June 2023</i>
+                      <div class="d-flex">
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="pt-3 fs-14">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum
+                    dolore eu fugiat nulla pariatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="px-xl-2 px-1">
+                <div class="review-profile p-4 rounded-5">
+                  <div class="d-flex gap-3">
+                    <div class="h-61-img">
+                      <img src="assets/images/pandit4.png" alt="" class="rounded-circle img-cover">
+                    </div>
+                    <div class="">
+                      <h6 class="f_size-15 font-500 mb-0 text-capitalize">ranjeet yadav</h6>
+                      <i class="light f_size-15">26 June 2023</i>
+                      <div class="d-flex">
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star-fill"></i>
+                        <i class="bi text-warning bi-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="pt-3 fs-14">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum
+                    dolore eu fugiat nulla pariatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- premium pooja  -->
+      <div class="puja-carousal container">
+        <h1 class=" font-500 text-uppercase text-dark font-prime text-center position-relative  pt-5 pb-4 mt-5">
+          premium
+          pooja</h1>
+        <div>
+          <div class="owl-carousel owl-theme Pujacarousel" data-carousel-id="1">
+            <div class="item">
+              <div class="p-pandit-card position-relative my-2 mx-auto">
+                <div>
+                  <i
+                    class="bi bi-heart text-prime text-p-light bg-light px-2 pt-2 pb-1 rounded-1 d-inline-block mt-3 ms-3"></i>
+                  <div class="offer-div position-absolute top-0  z-5  ">
+                    <div class="vertical-text text-light">
+                      35% OFF
+                    </div>
+                    <div class="triangle position-absolute bottom-0"></div>
+                  </div>
+                  <div class="p-pandit-img">
+                    <img src="assets\images\ganesh-49-1.webp" alt="" srcset="" width="290" height="309"
+                      class="d-block m-auto">
+                  </div>
+                </div>
+                <div class="p-pandit-content">
+                  <h2 style="font-size: 25px;" class="px-3 pt-2">Ganesh Pooja</h2>
+                  <p class="text-prime p-price d-inline-block px-2"><i class="bi bi-currency-rupee font-600"></i>3,560
+                  </p><span><strike><i class="bi bi-currency-rupee"></i> 7,500</strike></span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="p-pandit-card position-relative my-2 mx-auto">
+                <div>
+                  <i
+                    class="bi bi-heart text-prime text-p-light bg-light px-2 pt-2 pb-1 rounded-1 d-inline-block mt-3 ms-3"></i>
+                  <div class="offer-div position-absolute top-0  z-5  ">
+                    <div class="vertical-text text-light">
+                      35% OFF
+                    </div>
+                    <div class="triangle position-absolute bottom-0"></div>
+                  </div>
+                  <div class="p-pandit-img">
+                    <img src="assets\images\ganesh-49-1.webp" alt="" srcset="" width="290" height="309"
+                      class="d-block m-auto">
+                  </div>
+                </div>
+                <div class="p-pandit-content">
+                  <h2 style="font-size: 25px;" class="px-3 pt-2">Ganesh Pooja</h2>
+                  <p class="text-prime p-price d-inline-block px-2"><i class="bi bi-currency-rupee font-600"></i>3,560
+                  </p><span><strike><i class="bi bi-currency-rupee"></i> 7,500</strike></span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="p-pandit-card position-relative my-2 mx-auto">
+                <div>
+                  <i
+                    class="bi bi-heart text-prime text-p-light bg-light px-2 pt-2 pb-1 rounded-1 d-inline-block mt-3 ms-3"></i>
+                  <div class="offer-div position-absolute top-0  z-5  ">
+                    <div class="vertical-text text-light">
+                      35% OFF
+                    </div>
+                    <div class="triangle position-absolute bottom-0"></div>
+                  </div>
+                  <div class="p-pandit-img">
+                    <img src="assets\images\ganesh-49-1.webp" alt="" srcset="" width="290" height="309"
+                      class="d-block m-auto">
+                  </div>
+                </div>
+                <div class="p-pandit-content">
+                  <h2 style="font-size: 25px;" class="px-3 pt-2">Ganesh Pooja</h2>
+                  <p class="text-prime p-price d-inline-block px-2"><i class="bi bi-currency-rupee font-600"></i>3,560
+                  </p><span><strike><i class="bi bi-currency-rupee"></i> 7,500</strike></span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="p-pandit-card position-relative my-2 mx-auto">
+                <div>
+                  <i
+                    class="bi bi-heart text-prime text-p-light bg-light px-2 pt-2 pb-1 rounded-1 d-inline-block mt-3 ms-3"></i>
+                  <div class="offer-div position-absolute top-0  z-5  ">
+                    <div class="vertical-text text-light">
+                      35% OFF
+                    </div>
+                    <div class="triangle position-absolute bottom-0"></div>
+                  </div>
+                  <div class="p-pandit-img">
+                    <img src="assets\images\ganesh-49-1.webp" alt="" srcset="" width="290" height="309"
+                      class="d-block m-auto">
+                  </div>
+                </div>
+                <div class="p-pandit-content">
+                  <h2 style="font-size: 25px;" class="px-3 pt-2">Ganesh Pooja</h2>
+                  <p class="text-prime p-price d-inline-block px-2"><i class="bi bi-currency-rupee font-600"></i>3,560
+                  </p><span><strike><i class="bi bi-currency-rupee"></i> 7,500</strike></span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="p-pandit-card position-relative my-2 mx-auto">
+                <div>
+                  <i
+                    class="bi bi-heart text-prime text-p-light bg-light px-2 pt-2 pb-1 rounded-1 d-inline-block mt-3 ms-3"></i>
+                  <div class="offer-div position-absolute top-0  z-5  ">
+                    <div class="vertical-text text-light">
+                      35% OFF
+                    </div>
+                    <div class="triangle position-absolute bottom-0"></div>
+                  </div>
+                  <div class="p-pandit-img">
+                    <img src="assets\images\ganesh-49-1.webp" alt="" srcset="" width="290" height="309"
+                      class="d-block m-auto">
+                  </div>
+                </div>
+                <div class="p-pandit-content">
+                  <h2 style="font-size: 25px;" class="px-3 pt-2">Ganesh Pooja</h2>
+                  <p class="text-prime p-price d-inline-block px-2"><i class="bi bi-currency-rupee font-600"></i>3,560
+                  </p><span><strike><i class="bi bi-currency-rupee"></i> 7,500</strike></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-owl-controls" data-carousel-id="1">
+            <div class="custom-owl-prev "><img src="assets\images\arrow-down.svg" alt="Previous"></div>
+            <div class="custom-owl-next"><img src="assets\images\1arrow-down.svg" alt="Next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <footer class="mt-5 pb-2">
+    <div class="container-email">
+      <div class="row mx-0 mx-md-5">
+        <div class="col-lg-6">
+          <p class="text-capitalize text-light f_size-30 my-3 my-lg-5">Everyone gets something <br> special. Sign up to be everyone</p>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class=" w-75 my-lg-5">
+            <input type="email" name="email" id="" placeholder="Email" class="w-100 rounded-pill border border-light">
+            <label for="" class="float-end"><i class="bi bi-arrow-right fs-3 fs-lg-2 text-prime px-4 rounded-pill bg-light"></i></label>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr class="text-light border border-light">
+    <div class="footer_container ">
+      <img src="assets\images\pandit_log.png" alt="" srcset="" class="pandit_log m-auto d-block mt-4 bt-3">
+      <div class=" col-md-7 col-lg-6 col-xl-4 m-auto">
+        <p class="text-light text-center f_size-2 font-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <ul class="d-flex justify-content-center flex-wrap mt-4">
+        <li class=" mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">About Us</a></li>
+        <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">Contact Us</a></li>
+        <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">Blog</a></li>
+        <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">Privacy Policy</a></li>
+        <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize  f_size-2 text-decoration-none text-light fs-6 font-500">Terms & Condition</a>
+        </li>
+        <li class="mx-2 mx-lg-4"><a href="#" class="text-capitalize f_size-2 text-decoration-none text-light fs-6 font-500">Cancelation Policy</a>
+        </li>
+
+      </ul>
+      <ul class="d-flex justify-content-center mt-4">
+        <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\PayPal.webp" alt=""
+              srcset="" height="19"></a></li>
+        <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\mastercard .webp" alt=""
+              srcset="" height="19"></a></li>
+        <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\Visa Inc..webp" alt="" srcset=""
+              height="19"></a></li>
+        <li class=" mx-2 mx-lg-4"><a href="#" class="d-inline-block"><img src="assets\images\Paytm.webp" alt="" srcset=""
+              height="19"></a></li>
+        
+      </ul>
+      <hr class="text-light border border-light">
+      <p class="text-capitalize text-light text-center f_size-2 ">© Copyright 2023, EasyPandit</p>
+    </div>
+
+  </footer>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".copy-btn").click(function () {
+        // Get the text to copy from the element with the id "textToCopy"
+        var textToCopy = $("#textToCopy").text().trim();
+
+        // Create a temporary input element to copy the text
+        var tempInput = $("<input>");
+        $("body").append(tempInput);
+        tempInput.val(textToCopy).select();
+        document.execCommand("copy");
+        tempInput.remove();
+
+        // You can add a message or change the appearance to indicate that the text is copied
+        alert("Text copied: " + textToCopy);
+      });
+    });
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="assets\script.js"></script>
+  <script>
+
+  </script>
+
+</body>
+
+</html>
