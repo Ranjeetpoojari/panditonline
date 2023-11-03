@@ -45,6 +45,10 @@ body{
 .f_size-1 {
     font-size: calc(9px + (12 - 9)*(100vw - 320px) / (1920 - 320));
 }
+.view-pooja-all:hover{
+    background-color: #C03;color:#fff;
+    transition: all ease-in 0.3s;
+}
 .f_size-40{ font-size: calc(27px + (40 - 27)*(100vw - 320px) / (1920 - 320));}
 .f_size-20{ font-size: calc(14px + (20 - 14)*(100vw - 320px) / (1920 - 320));}
 .f_size-30{ font-size: calc(20px + (30 - 20)*(100vw - 320px) / (1920 - 320));}
