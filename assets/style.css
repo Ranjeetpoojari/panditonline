@@ -1073,9 +1073,10 @@ max-width:100% ;
 .checkout-tabs .check-items{display:block;width:auto!important; height:40px !important; border: none;}
 .checkout-tabs .check-items button{border:none;color:#000;font-size:clamp(13px ,2vw,16px); font-weight: 500;}
 .checkout-tabs .check-items button.active{border: none; border-bottom:2px solid #C03;}
+ .check-pay-option li a img{ width:100%;height: clamp(14px, 2vh, 20px); ;}
 .checkout-input {position: relative;margin-top: 25px;}
 .checkout-input .form-label{position:absolute; top:-12px; font-size: 12px; left:10px; background: #fff;}
-/*************** Checkout Page end**:active****** */
+/*************** Checkout Page end**+:active****** */
 
 
 .modal-height {
