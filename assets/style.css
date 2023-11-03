@@ -1405,7 +1405,7 @@ max-width:100% ;
 /* part end */
 /* ************ about end*********** */
 @media (max-width:460px) {
-    .check-pay-option li a img{width:100%;height:14px;}
+    .check-pay-option li a img{width:100%;height:15px;}
     #sec1 .splide__track .splide__list .splide__slide.is-active .testimonalcard,
         
     #sec1 .splide__track .splide__list .splide__slide.is-next .testimonalcard,
